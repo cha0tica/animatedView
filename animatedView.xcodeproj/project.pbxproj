@@ -7,23 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C18ECA4C98ABE12C74DE9598 /* Pods_animatedView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0B708A6B9A2E002AD0172 /* Pods_animatedView.framework */; };
+		D171B2A12AA7E21F003C80FC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171B2A02AA7E21F003C80FC /* Colors.swift */; };
+		D171B2B72AA8C3E1003C80FC /* confetti-final.json in Resources */ = {isa = PBXBuildFile; fileRef = D171B2B62AA8C3E1003C80FC /* confetti-final.json */; };
+		D171B2BA2AA8F89C003C80FC /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171B2B92AA8F89C003C80FC /* LoanModel.swift */; };
+		D171B2BC2AA8F91E003C80FC /* LoanProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171B2BB2AA8F91E003C80FC /* LoanProductVC.swift */; };
+		D17582042AABB8DC00B4ACB7 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D171B2A22AA7E240003C80FC /* Rubik-Bold.ttf */; };
+		D17582052AABB8DF00B4ACB7 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D171B2A32AA7E240003C80FC /* Rubik-Regular.ttf */; };
+		D17582062AABB8E100B4ACB7 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5052AABA6F000A29B3E /* Rubik-Black.ttf */; };
+		D17582072AABB8EE00B4ACB7 /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5012AABA6F000A29B3E /* Rubik-BlackItalic.ttf */; };
+		D17582082AABB8F400B4ACB7 /* Rubik-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC4FF2AABA6F000A29B3E /* Rubik-BoldItalic.ttf */; };
+		D17582092AABB90100B4ACB7 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5062AABA6F000A29B3E /* Rubik-ExtraBold.ttf */; };
+		D175820A2AABB90400B4ACB7 /* Rubik-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC4FB2AABA6F000A29B3E /* Rubik-ExtraBoldItalic.ttf */; };
+		D175820B2AABB90600B4ACB7 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5032AABA6F000A29B3E /* Rubik-Italic.ttf */; };
+		D175820C2AABB90800B4ACB7 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5042AABA6F000A29B3E /* Rubik-Light.ttf */; };
+		D175820D2AABB91200B4ACB7 /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC4FE2AABA6F000A29B3E /* Rubik-LightItalic.ttf */; };
+		D175820E2AABB91400B4ACB7 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC4FC2AABA6F000A29B3E /* Rubik-Medium.ttf */; };
+		D175820F2AABB91700B4ACB7 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5002AABA6F000A29B3E /* Rubik-MediumItalic.ttf */; };
+		D17582102AABB91A00B4ACB7 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC4FD2AABA6F000A29B3E /* Rubik-SemiBold.ttf */; };
+		D17582112AABB91C00B4ACB7 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5022AABA6F000A29B3E /* Rubik-SemiBoldItalic.ttf */; };
+		D18209F62AAA59EA006B837B /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18209F42AAA59EA006B837B /* LoanCell.swift */; };
+		D18209F72AAA59EA006B837B /* LoanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18209F52AAA59EA006B837B /* LoanCell.xib */; };
 		D1BAD58A2AA7DBEF0019CADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAD5892AA7DBEF0019CADD /* AppDelegate.swift */; };
 		D1BAD58C2AA7DBEF0019CADD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAD58B2AA7DBEF0019CADD /* SceneDelegate.swift */; };
-		D1BAD58E2AA7DBEF0019CADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAD58D2AA7DBEF0019CADD /* ViewController.swift */; };
+		D1BAD58E2AA7DBEF0019CADD /* OkLoanAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAD58D2AA7DBEF0019CADD /* OkLoanAnimation.swift */; };
 		D1BAD5912AA7DBEF0019CADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BAD58F2AA7DBEF0019CADD /* Main.storyboard */; };
 		D1BAD5932AA7DBF00019CADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1BAD5922AA7DBF00019CADD /* Assets.xcassets */; };
 		D1BAD5962AA7DBF00019CADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1BAD5942AA7DBF00019CADD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C458146B21F611D0F786CB3 /* Pods-animatedView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animatedView.debug.xcconfig"; path = "Target Support Files/Pods-animatedView/Pods-animatedView.debug.xcconfig"; sourceTree = "<group>"; };
+		5BEAD726A518AC3C992139E7 /* Pods-animatedView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animatedView.release.xcconfig"; path = "Target Support Files/Pods-animatedView/Pods-animatedView.release.xcconfig"; sourceTree = "<group>"; };
+		D14BC4FB2AABA6F000A29B3E /* Rubik-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		D14BC4FC2AABA6F000A29B3E /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		D14BC4FD2AABA6F000A29B3E /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
+		D14BC4FE2AABA6F000A29B3E /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
+		D14BC4FF2AABA6F000A29B3E /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D14BC5002AABA6F000A29B3E /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D14BC5012AABA6F000A29B3E /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D14BC5022AABA6F000A29B3E /* Rubik-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D14BC5032AABA6F000A29B3E /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		D14BC5042AABA6F000A29B3E /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		D14BC5052AABA6F000A29B3E /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		D14BC5062AABA6F000A29B3E /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D171B2A02AA7E21F003C80FC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D171B2A22AA7E240003C80FC /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		D171B2A32AA7E240003C80FC /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		D171B2B62AA8C3E1003C80FC /* confetti-final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "confetti-final.json"; sourceTree = "<group>"; };
+		D171B2B92AA8F89C003C80FC /* LoanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanModel.swift; sourceTree = "<group>"; };
+		D171B2BB2AA8F91E003C80FC /* LoanProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanProductVC.swift; sourceTree = "<group>"; };
+		D18209F42AAA59EA006B837B /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
+		D18209F52AAA59EA006B837B /* LoanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanCell.xib; sourceTree = "<group>"; };
 		D1BAD5862AA7DBEF0019CADD /* animatedView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animatedView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1BAD5892AA7DBEF0019CADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1BAD58B2AA7DBEF0019CADD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D1BAD58D2AA7DBEF0019CADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1BAD58D2AA7DBEF0019CADD /* OkLoanAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkLoanAnimation.swift; sourceTree = "<group>"; };
 		D1BAD5902AA7DBEF0019CADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1BAD5922AA7DBF00019CADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1BAD5952AA7DBF00019CADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1BAD5972AA7DBF00019CADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB0B708A6B9A2E002AD0172 /* Pods_animatedView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_animatedView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +75,119 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18ECA4C98ABE12C74DE9598 /* Pods_animatedView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		671534A238D863C0F829A158 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C458146B21F611D0F786CB3 /* Pods-animatedView.debug.xcconfig */,
+				5BEAD726A518AC3C992139E7 /* Pods-animatedView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6725E97727B03ACB9107F2F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0B708A6B9A2E002AD0172 /* Pods_animatedView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D110AE632AA7DD4600C2E82C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D171B29F2AA7E1FF003C80FC /* Fonts */,
+				D171B2B62AA8C3E1003C80FC /* confetti-final.json */,
+				D171B2A02AA7E21F003C80FC /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D110AE642AA7DD5100C2E82C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D185580E2AAB0D94000A5381 /* OkLoan */,
+				D185580F2AAB0DA7000A5381 /* LoanCards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D110AE652AA7DD5D00C2E82C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D1BAD5892AA7DBEF0019CADD /* AppDelegate.swift */,
+				D1BAD58B2AA7DBEF0019CADD /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D171B29F2AA7E1FF003C80FC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D171B2A22AA7E240003C80FC /* Rubik-Bold.ttf */,
+				D171B2A32AA7E240003C80FC /* Rubik-Regular.ttf */,
+				D14BC5052AABA6F000A29B3E /* Rubik-Black.ttf */,
+				D14BC5012AABA6F000A29B3E /* Rubik-BlackItalic.ttf */,
+				D14BC4FF2AABA6F000A29B3E /* Rubik-BoldItalic.ttf */,
+				D14BC5062AABA6F000A29B3E /* Rubik-ExtraBold.ttf */,
+				D14BC4FB2AABA6F000A29B3E /* Rubik-ExtraBoldItalic.ttf */,
+				D14BC5032AABA6F000A29B3E /* Rubik-Italic.ttf */,
+				D14BC5042AABA6F000A29B3E /* Rubik-Light.ttf */,
+				D14BC4FE2AABA6F000A29B3E /* Rubik-LightItalic.ttf */,
+				D14BC4FC2AABA6F000A29B3E /* Rubik-Medium.ttf */,
+				D14BC5002AABA6F000A29B3E /* Rubik-MediumItalic.ttf */,
+				D14BC4FD2AABA6F000A29B3E /* Rubik-SemiBold.ttf */,
+				D14BC5022AABA6F000A29B3E /* Rubik-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D171B2B82AA8F88C003C80FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D171B2B92AA8F89C003C80FC /* LoanModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D171B2BD2AA8FD99003C80FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D185580E2AAB0D94000A5381 /* OkLoan */ = {
+			isa = PBXGroup;
+			children = (
+				D1BAD58D2AA7DBEF0019CADD /* OkLoanAnimation.swift */,
+			);
+			path = OkLoan;
+			sourceTree = "<group>";
+		};
+		D185580F2AAB0DA7000A5381 /* LoanCards */ = {
+			isa = PBXGroup;
+			children = (
+				D171B2BB2AA8F91E003C80FC /* LoanProductVC.swift */,
+				D18209F42AAA59EA006B837B /* LoanCell.swift */,
+				D18209F52AAA59EA006B837B /* LoanCell.xib */,
+			);
+			path = LoanCards;
+			sourceTree = "<group>";
+		};
 		D1BAD57D2AA7DBEF0019CADD = {
 			isa = PBXGroup;
 			children = (
 				D1BAD5882AA7DBEF0019CADD /* animatedView */,
 				D1BAD5872AA7DBEF0019CADD /* Products */,
+				671534A238D863C0F829A158 /* Pods */,
+				6725E97727B03ACB9107F2F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +202,11 @@
 		D1BAD5882AA7DBEF0019CADD /* animatedView */ = {
 			isa = PBXGroup;
 			children = (
-				D1BAD5892AA7DBEF0019CADD /* AppDelegate.swift */,
-				D1BAD58B2AA7DBEF0019CADD /* SceneDelegate.swift */,
-				D1BAD58D2AA7DBEF0019CADD /* ViewController.swift */,
+				D171B2BD2AA8FD99003C80FC /* Services */,
+				D171B2B82AA8F88C003C80FC /* Models */,
+				D110AE652AA7DD5D00C2E82C /* Application */,
+				D110AE642AA7DD5100C2E82C /* Views */,
+				D110AE632AA7DD4600C2E82C /* Helpers */,
 				D1BAD58F2AA7DBEF0019CADD /* Main.storyboard */,
 				D1BAD5922AA7DBF00019CADD /* Assets.xcassets */,
 				D1BAD5942AA7DBF00019CADD /* LaunchScreen.storyboard */,
@@ -74,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1BAD59A2AA7DBF00019CADD /* Build configuration list for PBXNativeTarget "animatedView" */;
 			buildPhases = (
+				BEEABEA9292669D19881D7CA /* [CP] Check Pods Manifest.lock */,
 				D1BAD5822AA7DBEF0019CADD /* Sources */,
 				D1BAD5832AA7DBEF0019CADD /* Frameworks */,
 				D1BAD5842AA7DBEF0019CADD /* Resources */,
+				538CEB7F418CF2D574D8B513 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +275,82 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18209F72AAA59EA006B837B /* LoanCell.xib in Resources */,
+				D17582052AABB8DF00B4ACB7 /* Rubik-Regular.ttf in Resources */,
+				D17582072AABB8EE00B4ACB7 /* Rubik-BlackItalic.ttf in Resources */,
+				D17582062AABB8E100B4ACB7 /* Rubik-Black.ttf in Resources */,
+				D17582042AABB8DC00B4ACB7 /* Rubik-Bold.ttf in Resources */,
+				D175820C2AABB90800B4ACB7 /* Rubik-Light.ttf in Resources */,
+				D175820D2AABB91200B4ACB7 /* Rubik-LightItalic.ttf in Resources */,
+				D175820E2AABB91400B4ACB7 /* Rubik-Medium.ttf in Resources */,
+				D17582082AABB8F400B4ACB7 /* Rubik-BoldItalic.ttf in Resources */,
+				D17582102AABB91A00B4ACB7 /* Rubik-SemiBold.ttf in Resources */,
+				D175820A2AABB90400B4ACB7 /* Rubik-ExtraBoldItalic.ttf in Resources */,
 				D1BAD5962AA7DBF00019CADD /* LaunchScreen.storyboard in Resources */,
+				D175820F2AABB91700B4ACB7 /* Rubik-MediumItalic.ttf in Resources */,
+				D17582092AABB90100B4ACB7 /* Rubik-ExtraBold.ttf in Resources */,
+				D17582112AABB91C00B4ACB7 /* Rubik-SemiBoldItalic.ttf in Resources */,
 				D1BAD5932AA7DBF00019CADD /* Assets.xcassets in Resources */,
+				D175820B2AABB90600B4ACB7 /* Rubik-Italic.ttf in Resources */,
+				D171B2B72AA8C3E1003C80FC /* confetti-final.json in Resources */,
 				D1BAD5912AA7DBEF0019CADD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		538CEB7F418CF2D574D8B513 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-animatedView/Pods-animatedView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-animatedView/Pods-animatedView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-animatedView/Pods-animatedView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEEABEA9292669D19881D7CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-animatedView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1BAD5822AA7DBEF0019CADD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1BAD58E2AA7DBEF0019CADD /* ViewController.swift in Sources */,
+				D171B2BA2AA8F89C003C80FC /* LoanModel.swift in Sources */,
+				D1BAD58E2AA7DBEF0019CADD /* OkLoanAnimation.swift in Sources */,
+				D171B2BC2AA8F91E003C80FC /* LoanProductVC.swift in Sources */,
+				D171B2A12AA7E21F003C80FC /* Colors.swift in Sources */,
+				D18209F62AAA59EA006B837B /* LoanCell.swift in Sources */,
 				D1BAD58A2AA7DBEF0019CADD /* AppDelegate.swift in Sources */,
 				D1BAD58C2AA7DBEF0019CADD /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +494,7 @@
 		};
 		D1BAD59B2AA7DBF00019CADD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C458146B21F611D0F786CB3 /* Pods-animatedView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,14 +515,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cha0tica.animatedView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D1BAD59C2AA7DBF00019CADD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BEAD726A518AC3C992139E7 /* Pods-animatedView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,9 +547,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cha0tica.animatedView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
