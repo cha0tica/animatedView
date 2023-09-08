@@ -51,7 +51,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iIz-Hh-eka">
-                        <rect key="frame" x="0.0" y="35" width="350" height="646"/>
+                        <rect key="frame" x="0.0" y="35" width="350" height="656"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHz-D6-EAd">
                                 <rect key="frame" x="16" y="32" width="318" height="1"/>
@@ -127,7 +127,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="1dd-41-7I2" userLabel="Sum">
-                                <rect key="frame" x="16" y="193" width="318" height="72.333333333333314"/>
+                                <rect key="frame" x="16" y="193" width="318" height="80.333333333333314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="139" translatesAutoresizingMaskIntoConstraints="NO" id="DxW-5Z-ac2">
                                         <rect key="frame" x="0.0" y="0.0" width="318" height="16.333333333333332"/>
@@ -162,6 +162,7 @@
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5000" minValue="1000" maxValue="15000" translatesAutoresizingMaskIntoConstraints="NO" id="7Ca-VD-xAj">
                                         <rect key="frame" x="-2" y="22.333333333333343" width="322" height="31"/>
+                                        <color key="tintColor" name="BrandOrange"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="241" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-G6-KFB">
                                         <rect key="frame" x="0.0" y="58.333333333333314" width="318" height="14"/>
@@ -194,6 +195,13 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08v-cI-NLF" userLabel="Spacer">
+                                        <rect key="frame" x="39" y="78.333333333333314" width="240" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="WgT-fW-oeC"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="DxW-5Z-ac2" secondAttribute="trailing" id="DyX-KA-yqS"/>
@@ -205,7 +213,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9i5-zP-dFh" userLabel="Days">
-                                <rect key="frame" x="16" y="281.33333333333331" width="318" height="60.333333333333314"/>
+                                <rect key="frame" x="16" y="289.33333333333331" width="318" height="62.333333333333314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="134" translatesAutoresizingMaskIntoConstraints="NO" id="caE-rS-NVh">
                                         <rect key="frame" x="0.0" y="0.0" width="318" height="16.333333333333332"/>
@@ -240,6 +248,7 @@
                                     </stackView>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LUN-I3-hXp">
                                         <rect key="frame" x="-2" y="16.333333333333371" width="322" height="31"/>
+                                        <color key="tintColor" name="BrandOrange"/>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="290" translatesAutoresizingMaskIntoConstraints="NO" id="8PM-ac-QsB">
                                         <rect key="frame" x="0.0" y="46.333333333333371" width="318" height="14"/>
@@ -272,6 +281,13 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOK-Sb-7Qm" userLabel="Spacer">
+                                        <rect key="frame" x="39" y="60.333333333333371" width="240" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="SCD-e1-7Fi"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="8PM-ac-QsB" firstAttribute="leading" secondItem="9i5-zP-dFh" secondAttribute="leading" id="1zq-zK-hK3"/>
@@ -285,7 +301,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xvm-Hu-Fhu" userLabel="Percent">
-                                <rect key="frame" x="16" y="357.66666666666669" width="318" height="54.666666666666686"/>
+                                <rect key="frame" x="16" y="367.66666666666669" width="318" height="54.666666666666686"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-BN-Bix">
                                         <rect key="frame" x="0.0" y="0.0" width="318" height="16.333333333333332"/>
@@ -358,7 +374,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1dR-30-DMg" userLabel="Schedule">
-                                <rect key="frame" x="16" y="428.33333333333331" width="318" height="83.666666666666686"/>
+                                <rect key="frame" x="16" y="438.33333333333331" width="318" height="83.666666666666686"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="csA-V0-rEH">
                                         <rect key="frame" x="0.0" y="0.0" width="318" height="21"/>
@@ -458,7 +474,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIi-9G-JPo">
-                                <rect key="frame" x="16" y="528" width="318" height="68"/>
+                                <rect key="frame" x="16" y="538" width="318" height="68"/>
                                 <color key="backgroundColor" name="BrandOrange"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="4h3-9B-4VV"/>

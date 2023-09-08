@@ -32,6 +32,7 @@ struct NewLoanProductModel : Codable {
     let selectedDays : Int?
     
     //Дата возврата. Может не быть
+    let percentSize : Float?
     let dateofReturn : String?
     
     //График платежей. Может не быть.
@@ -47,6 +48,7 @@ var loanProducts = [
                         percentTop: 0,
                         daysTopMenu: 30,
                         selectedDays: nil,
+                        percentSize: 0.0,
                         dateofReturn: "30.08.2023",
                         sumOfPayment: nil,
                         paymentsCount: nil),
@@ -57,6 +59,7 @@ var loanProducts = [
                         percentTop: 0.8,
                         daysTopMenu: 12,
                         selectedDays: nil,
+                        percentSize: nil,
                         dateofReturn: nil,
                         sumOfPayment: 4100,
                         paymentsCount: 10),
@@ -67,6 +70,7 @@ var loanProducts = [
                         percentTop: 0.8,
                         daysTopMenu: 12,
                         selectedDays: 63,
+                        percentSize: nil,
                         dateofReturn: nil,
                         sumOfPayment: nil,
                         paymentsCount: nil),

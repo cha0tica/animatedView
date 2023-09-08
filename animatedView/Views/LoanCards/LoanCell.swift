@@ -8,7 +8,7 @@
 import UIKit
 
 class LoanCell: UICollectionViewCell {
-
+    
     //MARK: Outlets
     
     //GreenLine
@@ -63,6 +63,47 @@ class LoanCell: UICollectionViewCell {
         super.layoutIfNeeded()
     }
     
+    //MARK: functions
+    
+    func configure(with model: NewLoanProductModel) {
+        if let greenLineText = model.greenLineText {
+            greenLine.isHidden = false
+            self.greenLineText.text = model.greenLineText
+        } else {
+            greenLine.isHidden = true
+        }
+        
+        // Обязательные поля
+        loanName.text = model.loanName
+        maxLoanSum.text = "\(model.maxLoanSum) ₽"
+        percentTop.text = "\(model.percentTop)% в день"
+        daysTop.text = "\(model.daysTopMenu) д."
+        
+        if let selectedDays = model.selectedDays {
+            termSelect.isHidden = false
+            self.selectedDays.text = "\(selectedDays) дней"
+        } else {
+            termSelect.isHidden = true
+        }
+        
+        if let dateofReturn = model.dateofReturn, let percentSize = model.percentSize {
+            percentInfo.isHidden = false
+            self.percentSize.text = ("\(percentSize) ₽")
+            self.dateofReturn.text = dateofReturn
+        } else {
+            percentInfo.isHidden = true
+        }
+        
+        if let sumOfPayment = model.sumOfPayment, let paymentsCount = model.paymentsCount {
+            scheduleInfo.isHidden = false
+            self.sumOfPayment.text = "\(sumOfPayment)"
+            self.paymentsCount.text = "\(paymentsCount)"
+        } else {
+            scheduleInfo.isHidden = true
+        }
+    }
+    
+    
     func updateUI() {
         layer.shadowColor = UIColor.gray.cgColor
         layer.shadowOpacity = 0.25
@@ -92,5 +133,5 @@ class LoanCell: UICollectionViewCell {
         selectLoan.layer.cornerRadius = selectLoan.bounds.height / 2
         selectLoan.clipsToBounds = true
     }
-
+    
 }

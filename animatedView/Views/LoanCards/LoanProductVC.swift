@@ -10,13 +10,14 @@ import UIKit
 
 class LoanProductVC : UIViewController {
     
-//MARK: outlets
+    //MARK: outlets
     @IBOutlet weak var loanView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loanView.delegate = self
         loanView.dataSource = self
+
     }
     
     //MARK: Func
@@ -40,6 +41,9 @@ extension LoanProductVC : UICollectionViewDataSource {
         collectionView.register(nib, forCellWithReuseIdentifier: "LoanCell")
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LoanCell", for: indexPath) as! LoanCell
+        
+        let loanProductModel = loanProducts[indexPath.item]
+        cell.configure(with: loanProductModel)
         
         return cell
     }

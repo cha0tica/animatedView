@@ -26,6 +26,7 @@
 		D175820F2AABB91700B4ACB7 /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5002AABA6F000A29B3E /* Rubik-MediumItalic.ttf */; };
 		D17582102AABB91A00B4ACB7 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC4FD2AABA6F000A29B3E /* Rubik-SemiBold.ttf */; };
 		D17582112AABB91C00B4ACB7 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5022AABA6F000A29B3E /* Rubik-SemiBoldItalic.ttf */; };
+		D17582132AABC39F00B4ACB7 /* CarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17582122AABC39F00B4ACB7 /* CarouselFlowLayout.swift */; };
 		D18209F62AAA59EA006B837B /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18209F42AAA59EA006B837B /* LoanCell.swift */; };
 		D18209F72AAA59EA006B837B /* LoanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18209F52AAA59EA006B837B /* LoanCell.xib */; };
 		D1BAD58A2AA7DBEF0019CADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAD5892AA7DBEF0019CADD /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 		D171B2B62AA8C3E1003C80FC /* confetti-final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "confetti-final.json"; sourceTree = "<group>"; };
 		D171B2B92AA8F89C003C80FC /* LoanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanModel.swift; sourceTree = "<group>"; };
 		D171B2BB2AA8F91E003C80FC /* LoanProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanProductVC.swift; sourceTree = "<group>"; };
+		D17582122AABC39F00B4ACB7 /* CarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselFlowLayout.swift; sourceTree = "<group>"; };
 		D18209F42AAA59EA006B837B /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
 		D18209F52AAA59EA006B837B /* LoanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanCell.xib; sourceTree = "<group>"; };
 		D1BAD5862AA7DBEF0019CADD /* animatedView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animatedView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +178,7 @@
 			children = (
 				D171B2BB2AA8F91E003C80FC /* LoanProductVC.swift */,
 				D18209F42AAA59EA006B837B /* LoanCell.swift */,
+				D17582122AABC39F00B4ACB7 /* CarouselFlowLayout.swift */,
 				D18209F52AAA59EA006B837B /* LoanCell.xib */,
 			);
 			path = LoanCards;
@@ -353,6 +356,7 @@
 				D18209F62AAA59EA006B837B /* LoanCell.swift in Sources */,
 				D1BAD58A2AA7DBEF0019CADD /* AppDelegate.swift in Sources */,
 				D1BAD58C2AA7DBEF0019CADD /* SceneDelegate.swift in Sources */,
+				D17582132AABC39F00B4ACB7 /* CarouselFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
