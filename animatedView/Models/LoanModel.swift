@@ -40,19 +40,9 @@ struct NewLoanProductModel : Codable {
     let paymentsCount : Int?
 }
 
+//MARK: Mock data
 
 var loanProducts = [
-    NewLoanProductModel(greenLineText: "Хит продаж",
-                        loanName: "Первый займ 0%",
-                        maxLoanSum: 15000,
-                        percentTop: 0,
-                        daysTopMenu: 30,
-                        selectedDays: nil,
-                        percentSize: 0.0,
-                        dateofReturn: "30.08.2023",
-                        sumOfPayment: nil,
-                        paymentsCount: nil),
-    
     NewLoanProductModel(greenLineText: "Персональное предложение",
                         loanName: "Перекредитование оптимальный на 180 дней 0,74%",
                         maxLoanSum: 40000,
@@ -63,6 +53,17 @@ var loanProducts = [
                         dateofReturn: nil,
                         sumOfPayment: 4100,
                         paymentsCount: 10),
+    
+    NewLoanProductModel(greenLineText: "Хит продаж",
+                        loanName: "Первый займ 0%",
+                        maxLoanSum: 15000,
+                        percentTop: 0,
+                        daysTopMenu: 30,
+                        selectedDays: nil,
+                        percentSize: 0.0,
+                        dateofReturn: "30.08.2023",
+                        sumOfPayment: nil,
+                        paymentsCount: nil),
     
     NewLoanProductModel(greenLineText: nil,
                         loanName: "Премиальный 0,8% на 12 недель",
@@ -75,9 +76,6 @@ var loanProducts = [
                         sumOfPayment: nil,
                         paymentsCount: nil),
 ]
-
-
-//MARK: Mock data
 
 let currentJson = """
 [

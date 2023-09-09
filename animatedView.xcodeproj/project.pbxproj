@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C18ECA4C98ABE12C74DE9598 /* Pods_animatedView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB0B708A6B9A2E002AD0172 /* Pods_animatedView.framework */; };
+		D16897E62AACAE4F00ED801C /* LoanProductFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16897E52AACAE4F00ED801C /* LoanProductFlowLayout.swift */; };
 		D171B2A12AA7E21F003C80FC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171B2A02AA7E21F003C80FC /* Colors.swift */; };
 		D171B2B72AA8C3E1003C80FC /* confetti-final.json in Resources */ = {isa = PBXBuildFile; fileRef = D171B2B62AA8C3E1003C80FC /* confetti-final.json */; };
 		D171B2BA2AA8F89C003C80FC /* LoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D171B2B92AA8F89C003C80FC /* LoanModel.swift */; };
@@ -51,6 +52,7 @@
 		D14BC5042AABA6F000A29B3E /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
 		D14BC5052AABA6F000A29B3E /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
 		D14BC5062AABA6F000A29B3E /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D16897E52AACAE4F00ED801C /* LoanProductFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanProductFlowLayout.swift; sourceTree = "<group>"; };
 		D171B2A02AA7E21F003C80FC /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D171B2A22AA7E240003C80FC /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
 		D171B2A32AA7E240003C80FC /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				D171B2BB2AA8F91E003C80FC /* LoanProductVC.swift */,
 				D18209F42AAA59EA006B837B /* LoanCell.swift */,
+				D16897E52AACAE4F00ED801C /* LoanProductFlowLayout.swift */,
 				D18209F52AAA59EA006B837B /* LoanCell.xib */,
 			);
 			path = LoanCards;
@@ -353,6 +356,7 @@
 				D18209F62AAA59EA006B837B /* LoanCell.swift in Sources */,
 				D1BAD58A2AA7DBEF0019CADD /* AppDelegate.swift in Sources */,
 				D1BAD58C2AA7DBEF0019CADD /* SceneDelegate.swift in Sources */,
+				D16897E62AACAE4F00ED801C /* LoanProductFlowLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

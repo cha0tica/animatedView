@@ -10,19 +10,30 @@ import UIKit
 
 class LoanProductVC : UIViewController {
     
-    //MARK: outlets
+    //MARK: Outlets
     @IBOutlet weak var loanView: UICollectionView!
     @IBOutlet weak var scrollingIndicator: UICollectionView!
+    
+    //MARK: Actions
     
     //MARK: Vars
     
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loanView.delegate = self
         loanView.dataSource = self
-
+        
+        //newcode
+        let customFlowLayout = LoanProductFlowLayout()
+        loanView.collectionViewLayout = customFlowLayout
+        
         cellsSettings()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        loanView.scrollToItem(at: IndexPath(item: loanProducts.count/2, section: 0), at: .centeredHorizontally, animated: true)
     }
     
     //MARK: Func
@@ -38,8 +49,8 @@ class LoanProductVC : UIViewController {
         
         layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
         loanView.contentInset = UIEdgeInsets(top: insertY, left: insertX, bottom: insertY, right: insertX)
+        layout.minimumLineSpacing = -(layout.itemSize.width * 0.5)
     }
-    
 }
 
 extension LoanProductVC : UICollectionViewDataSource {

@@ -23,19 +23,22 @@ class LoanCell: UICollectionViewCell {
     @IBOutlet weak var percentTop: UILabel!
     @IBOutlet weak var daysTop: UILabel!
     
-    //SumSelect
+    //SumOfLoanSelect
     @IBOutlet weak var sumSelect: UIStackView!
+    @IBOutlet weak var sumSlider: UISlider!
+    @IBOutlet weak var userSelectSum: UILabel!
     @IBOutlet weak var selectedSum: UIStackView!
     @IBOutlet weak var minSum: UILabel!
     @IBOutlet weak var maxSum: UILabel!
     
-    //TermSelect
+    //DaysForReturnSelect
     @IBOutlet weak var termSelect: UIStackView!
+    @IBOutlet weak var daysSlider: UISlider!
     @IBOutlet weak var selectedDays: UILabel!
     @IBOutlet weak var minDays: UILabel!
     @IBOutlet weak var maxDays: UILabel!
     
-    //Percents
+    //PercentsInfo
     @IBOutlet weak var percentInfo: UIStackView!
     @IBOutlet weak var percentSize: UILabel!
     @IBOutlet weak var dateofReturn: UILabel!
@@ -47,15 +50,21 @@ class LoanCell: UICollectionViewCell {
     
     @IBOutlet weak var selectLoan: UIButton!
     
-    //MARK: LifeCycle
+    //MARK: Actions
+    @IBAction func sumSliderDragged(_ sender: Any) {
+        userSelectSum.text = ("\(Int(sumSlider.value))  ₽")
+    }
     
+    @IBAction func daysSliderDragged(_ sender: Any) {
+        selectedDays.text = ("\(Int(daysSlider.value))  д.")
+    }
+    
+    //MARK: LifeCycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
         gradientButton()
         updateUI()
-        
-        
     }
     
     override public func layoutSubviews() {
@@ -65,18 +74,6 @@ class LoanCell: UICollectionViewCell {
     
     //MARK: functions
     
-    func transformToLarge(){
-      UIView.animate(withDuration: 0.2){
-        self.transform = CGAffineTransform(scaleX: 1.07, y: 1.07)
-      }
-    }
-    
-    func transformToStandard(){
-      UIView.animate(withDuration: 0.2){
-        self.transform = CGAffineTransform.identity
-      }
-    }
-    
     func configure(with model: NewLoanProductModel) {
         if let greenLineText = model.greenLineText {
             greenLine.isHidden = false
@@ -85,19 +82,31 @@ class LoanCell: UICollectionViewCell {
             greenLine.isHidden = true
         }
         
-        // Обязательные поля
+        //MustHave
         loanName.text = model.loanName
         maxLoanSum.text = "\(model.maxLoanSum) ₽"
         percentTop.text = "\(model.percentTop)% в день"
         daysTop.text = "\(model.daysTopMenu) д."
         
+        //SumOfLoanSelect
+        maxSum.text = "\(model.maxLoanSum) ₽"
+        sumSlider.minimumValue = 1000
+        sumSlider.maximumValue = Float(model.maxLoanSum)
+        sumSlider.value = Float(model.maxLoanSum)
+        userSelectSum.text = "\(model.maxLoanSum) ₽"
+        
         if let selectedDays = model.selectedDays {
             termSelect.isHidden = false
-            self.selectedDays.text = "\(selectedDays) дней"
+            self.daysSlider.minimumValue = 1
+            self.daysSlider.maximumValue = Float(model.daysTopMenu)
+            self.daysSlider.value = Float(model.daysTopMenu)
+            self.maxDays.text = "\(model.daysTopMenu) д."
+            self.selectedDays.text = "\(model.daysTopMenu) д."
         } else {
             termSelect.isHidden = true
         }
         
+        //DaysForReturnSelect
         if let dateofReturn = model.dateofReturn, let percentSize = model.percentSize {
             percentInfo.isHidden = false
             self.percentSize.text = ("\(percentSize) ₽")
@@ -115,7 +124,6 @@ class LoanCell: UICollectionViewCell {
         }
     }
     
-    
     func updateUI() {
         layer.shadowColor = UIColor.gray.cgColor
         layer.shadowOpacity = 0.25
@@ -128,7 +136,6 @@ class LoanCell: UICollectionViewCell {
         
         cardStack.layer.cornerRadius = 16
         cardStack.clipsToBounds = true
-        
     }
     
     func gradientButton() {
@@ -145,5 +152,4 @@ class LoanCell: UICollectionViewCell {
         selectLoan.layer.cornerRadius = selectLoan.bounds.height / 2
         selectLoan.clipsToBounds = true
     }
-    
 }

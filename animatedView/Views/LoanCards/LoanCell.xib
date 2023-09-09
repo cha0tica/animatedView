@@ -163,6 +163,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5000" minValue="1000" maxValue="15000" translatesAutoresizingMaskIntoConstraints="NO" id="7Ca-VD-xAj">
                                         <rect key="frame" x="-2" y="22.333333333333343" width="322" height="31"/>
                                         <color key="tintColor" name="BrandOrange"/>
+                                        <connections>
+                                            <action selector="sumSliderDragged:" destination="gTV-IL-0wX" eventType="valueChanged" id="60f-a2-4fP"/>
+                                        </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="241" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-G6-KFB">
                                         <rect key="frame" x="0.0" y="58.333333333333314" width="318" height="14"/>
@@ -249,6 +252,9 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LUN-I3-hXp">
                                         <rect key="frame" x="-2" y="16.333333333333371" width="322" height="31"/>
                                         <color key="tintColor" name="BrandOrange"/>
+                                        <connections>
+                                            <action selector="daysSliderDragged:" destination="gTV-IL-0wX" eventType="valueChanged" id="VeU-b5-uN0"/>
+                                        </connections>
                                     </slider>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="290" translatesAutoresizingMaskIntoConstraints="NO" id="8PM-ac-QsB">
                                         <rect key="frame" x="0.0" y="46.333333333333371" width="318" height="14"/>
@@ -527,6 +533,7 @@
             <connections>
                 <outlet property="cardStack" destination="iIz-Hh-eka" id="iod-F9-aq7"/>
                 <outlet property="dateofReturn" destination="HqF-26-NFX" id="ugN-1B-GrZ"/>
+                <outlet property="daysSlider" destination="LUN-I3-hXp" id="ih7-dl-1A9"/>
                 <outlet property="daysTop" destination="AZ0-NX-1Na" id="9Jw-kH-TZh"/>
                 <outlet property="greenLine" destination="tf0-xe-0tg" id="JNh-ML-heF"/>
                 <outlet property="greenLineText" destination="ALa-Zu-mXX" id="XEx-9l-kbp"/>
@@ -546,7 +553,9 @@
                 <outlet property="selectedSum" destination="DxW-5Z-ac2" id="HLL-re-bq9"/>
                 <outlet property="sumOfPayment" destination="0SP-fB-Uuw" id="vhg-0y-ud2"/>
                 <outlet property="sumSelect" destination="1dd-41-7I2" id="GNN-RK-goq"/>
+                <outlet property="sumSlider" destination="7Ca-VD-xAj" id="tPT-SN-odz"/>
                 <outlet property="termSelect" destination="9i5-zP-dFh" id="dRL-Wa-toW"/>
+                <outlet property="userSelectSum" destination="H6p-7W-3jy" id="StX-KN-aUa"/>
             </connections>
             <point key="canvasLocation" x="16.793893129770993" y="19.366197183098592"/>
         </collectionViewCell>
