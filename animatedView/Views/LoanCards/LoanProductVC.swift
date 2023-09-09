@@ -12,8 +12,8 @@ class LoanProductVC : UIViewController {
     
     //MARK: Outlets
     @IBOutlet weak var loanView: UICollectionView!
-    @IBOutlet weak var scrollingIndicator: UICollectionView!
-    
+    @IBOutlet weak var scrollIndicator: UIPageControl!
+   
     //MARK: Actions
     
     //MARK: Vars
@@ -25,18 +25,26 @@ class LoanProductVC : UIViewController {
         loanView.delegate = self
         loanView.dataSource = self
         
-        //newcode
         let customFlowLayout = LoanProductFlowLayout()
         loanView.collectionViewLayout = customFlowLayout
-        
+        scrollerSetup()
         cellsSettings()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         loanView.scrollToItem(at: IndexPath(item: loanProducts.count/2, section: 0), at: .centeredHorizontally, animated: true)
+        scrollIndicator.currentPage = loanProducts.count/2
     }
     
     //MARK: Func
+    func scrollerSetup() {
+        if loanProducts.count > 1 {
+            scrollIndicator.numberOfPages = loanProducts.count
+        } else {
+            scrollIndicator.isHidden = true
+        }
+
+    }
     
     func cellsSettings() {
         let screenSize = UIScreen.main.bounds.size
@@ -85,5 +93,7 @@ extension LoanProductVC : UICollectionViewDelegate, UIScrollViewDelegate {
         offset = CGPoint(x: roundedIndex * cellWidthWithSpacing - scrollView.contentInset.left, y: scrollView.contentInset.top)
         
         targetContentOffset.pointee = offset
+        
+        scrollIndicator.currentPage = Int(roundedIndex)
     }
 }

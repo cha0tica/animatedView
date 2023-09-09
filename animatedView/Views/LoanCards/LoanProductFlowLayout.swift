@@ -35,11 +35,11 @@ class LoanProductFlowLayout: UICollectionViewFlowLayout {
     }
     
     func changeLayoutAttributes(_ attributes: UICollectionViewLayoutAttributes) {
-        let collectionCenter = collectionView!.frame.size.width / 2  // Изменено на ширину
-        let offset = collectionView!.contentOffset.x  // Изменено на горизонтальный сдвиг
-        let normalizedCenter = attributes.center.x - offset  // Изменено на горизонтальный сдвиг
+        let collectionCenter = collectionView!.frame.size.width / 2
+        let offset = collectionView!.contentOffset.x
+        let normalizedCenter = attributes.center.x - offset
         
-        let maxDistance = self.itemSize.width + self.minimumLineSpacing  // Изменено на ширину
+        let maxDistance = self.itemSize.width + self.minimumLineSpacing
         let distance = min(abs(collectionCenter - normalizedCenter), maxDistance)
         
         let ratio = (maxDistance - distance) / maxDistance
