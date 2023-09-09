@@ -160,6 +160,30 @@
                                     <constraint firstAttribute="width" constant="51" id="tfL-1h-DwM"/>
                                 </constraints>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pfT-bA-0HU">
+                                <rect key="frame" x="70" y="780" width="253" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="7cr-y5-HVN"/>
+                                    <constraint firstAttribute="height" constant="20" id="K0A-lE-ev3"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GCm-Mk-a4R">
+                                    <size key="itemSize" width="128" height="20"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Nfu-GU-NH7">
+                                        <rect key="frame" x="62.666666666666664" y="0.0" width="128" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rNl-Ez-T9E">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="20"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FX3-AE-6vw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -167,10 +191,13 @@
                             <constraint firstAttribute="bottom" secondItem="VMF-zs-YaF" secondAttribute="bottom" id="0HQ-dx-wXv"/>
                             <constraint firstItem="qgK-MG-ccQ" firstAttribute="top" secondItem="FX3-AE-6vw" secondAttribute="top" constant="20" id="2m6-4S-y99"/>
                             <constraint firstItem="4L1-Zh-Lby" firstAttribute="centerY" secondItem="qgK-MG-ccQ" secondAttribute="centerY" id="5wU-mS-Aww"/>
+                            <constraint firstItem="YQW-Jr-jvJ" firstAttribute="top" secondItem="qgK-MG-ccQ" secondAttribute="bottom" constant="35.666666666666686" id="8cC-cW-cEY"/>
                             <constraint firstItem="VMF-zs-YaF" firstAttribute="leading" secondItem="FX3-AE-6vw" secondAttribute="leading" id="DvB-ir-fXu"/>
                             <constraint firstItem="FX3-AE-6vw" firstAttribute="bottom" secondItem="YQW-Jr-jvJ" secondAttribute="bottom" constant="58" id="Nla-o8-7hM"/>
+                            <constraint firstItem="FX3-AE-6vw" firstAttribute="trailing" secondItem="pfT-bA-0HU" secondAttribute="trailing" constant="70" id="QU4-53-ZWX"/>
+                            <constraint firstItem="pfT-bA-0HU" firstAttribute="leading" secondItem="FX3-AE-6vw" secondAttribute="leading" constant="70" id="Uf6-zL-mNw"/>
                             <constraint firstItem="YQW-Jr-jvJ" firstAttribute="leading" secondItem="FX3-AE-6vw" secondAttribute="leading" id="YHW-mi-P4b"/>
-                            <constraint firstItem="YQW-Jr-jvJ" firstAttribute="top" secondItem="4L1-Zh-Lby" secondAttribute="bottom" constant="20" id="j3P-MY-DzY"/>
+                            <constraint firstItem="pfT-bA-0HU" firstAttribute="top" secondItem="YQW-Jr-jvJ" secondAttribute="bottom" constant="20" id="dck-KI-uGh"/>
                             <constraint firstItem="VMF-zs-YaF" firstAttribute="top" secondItem="LeX-DX-mel" secondAttribute="top" id="mEg-bt-DgJ"/>
                             <constraint firstItem="4L1-Zh-Lby" firstAttribute="centerX" secondItem="LeX-DX-mel" secondAttribute="centerX" id="s3I-Fh-k0V"/>
                             <constraint firstItem="FX3-AE-6vw" firstAttribute="trailing" secondItem="qgK-MG-ccQ" secondAttribute="trailing" constant="20" id="s9H-Wq-Yhh"/>
@@ -180,6 +207,7 @@
                     </view>
                     <connections>
                         <outlet property="loanView" destination="YQW-Jr-jvJ" id="GGI-3L-fPd"/>
+                        <outlet property="scrollingIndicator" destination="pfT-bA-0HU" id="81a-8c-fed"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBW-hx-0ah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

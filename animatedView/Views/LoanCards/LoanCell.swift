@@ -65,6 +65,18 @@ class LoanCell: UICollectionViewCell {
     
     //MARK: functions
     
+    func transformToLarge(){
+      UIView.animate(withDuration: 0.2){
+        self.transform = CGAffineTransform(scaleX: 1.07, y: 1.07)
+      }
+    }
+    
+    func transformToStandard(){
+      UIView.animate(withDuration: 0.2){
+        self.transform = CGAffineTransform.identity
+      }
+    }
+    
     func configure(with model: NewLoanProductModel) {
         if let greenLineText = model.greenLineText {
             greenLine.isHidden = false
