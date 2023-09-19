@@ -10,11 +10,20 @@ import Lottie
 
 class OkLoanAnimation: UIViewController {
     
-    
+    //MARK: Outlets
     @IBOutlet weak var headerText: UILabel!
     @IBOutlet weak var simpleText: UILabel!
     @IBOutlet weak var okTimer: UIImageView!
 
+    //MARK: Actions
+    @IBAction func rateUsButton(_ sender: Any) {
+        let rateUsPopUp = RateUsView()
+            let sheet = rateUsPopUp.sheetPresentationController
+            sheet?.detents = [.medium()]
+            present(rateUsPopUp, animated: true)
+    }
+    
+    //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         okTimer.alpha = 0.0
@@ -24,6 +33,7 @@ class OkLoanAnimation: UIViewController {
         animateOkAppearance()
     }
     
+    //MARK: Functions
     func confetti() {
         let jsonName = "confetti-final"
         let animation = LottieAnimation.named(jsonName)

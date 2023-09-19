@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X5H-ga-kEy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -75,6 +75,36 @@
                                     <constraint firstAttribute="width" constant="51" id="xDh-XU-1Gc"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AcX-lM-0az">
+                                <rect key="frame" x="70.666666666666686" y="718" width="252" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Iyj-nn-aur"/>
+                                    <constraint firstAttribute="width" constant="252" id="WpP-hb-5zX"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ОЦЕНИТЬ ПРИЛОЖЕНИЕ">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="16" name="Rubik-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rateUsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FaL-GK-aLM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -86,11 +116,13 @@
                             <constraint firstAttribute="bottom" secondItem="PDP-Ee-B4V" secondAttribute="bottom" id="CXo-Lt-Kw7"/>
                             <constraint firstItem="8zw-tR-ouj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-222" id="DPX-aD-Wxk"/>
                             <constraint firstItem="H2a-nS-J9z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E8t-Q2-AC2"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="AcX-lM-0az" secondAttribute="bottom" constant="32" id="EYW-d9-ekb"/>
                             <constraint firstItem="JYN-Ok-AHm" firstAttribute="top" secondItem="mUj-Dm-i0i" secondAttribute="bottom" constant="20" id="ICw-n9-EvD"/>
                             <constraint firstItem="JYN-Ok-AHm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="MBM-pa-3jF"/>
                             <constraint firstItem="JYN-Ok-AHm" firstAttribute="top" secondItem="mUj-Dm-i0i" secondAttribute="bottom" constant="20" id="PlO-95-KRU"/>
                             <constraint firstItem="8zw-tR-ouj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RzH-tf-07P"/>
                             <constraint firstItem="Eic-v5-jvB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TxW-1l-L2B"/>
+                            <constraint firstItem="AcX-lM-0az" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aOd-ps-kOa"/>
                             <constraint firstItem="mUj-Dm-i0i" firstAttribute="top" secondItem="H2a-nS-J9z" secondAttribute="bottom" constant="44" id="d1e-GL-POy"/>
                             <constraint firstItem="mUj-Dm-i0i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="46" id="d8v-rN-tGY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eic-v5-jvB" secondAttribute="trailing" constant="20" id="j8Y-H7-rfy"/>
@@ -195,12 +227,130 @@
             </objects>
             <point key="canvasLocation" x="903" y="-2"/>
         </scene>
+        <!--Go Update-->
+        <scene sceneID="VHz-Dp-89i">
+            <objects>
+                <viewController id="QmE-Uh-3cR" customClass="GoUpdate" customModule="animatedView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JQC-uJ-oON">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="8XZ-Wg-TVp">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81g-Bh-szL">
+                                <rect key="frame" x="46" y="499" width="301" height="72"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Быстроденьги стали еще удобнее для вас. Пожалуйста, обновите приложение">
+                                        <attributes>
+                                            <color key="NSColor" name="Gray70"/>
+                                            <font key="NSFont" size="16" name="Rubik-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLq-XW-fDp">
+                                <rect key="frame" x="46" y="451" width="301" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Время обновиться!">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Rubik-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square-timer" translatesAutoresizingMaskIntoConstraints="NO" id="JEl-sS-AzB">
+                                <rect key="frame" x="122" y="258" width="149" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="6hX-BV-PJ7"/>
+                                    <constraint firstAttribute="width" constant="149" id="QcR-ln-8xq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refresh" translatesAutoresizingMaskIntoConstraints="NO" id="rwe-fS-a0J">
+                                <rect key="frame" x="143.66666666666666" y="303" width="86" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="Izj-Mn-1Mz"/>
+                                    <constraint firstAttribute="width" constant="86" id="UfT-jD-rbC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHP-Dc-8HB">
+                                <rect key="frame" x="70.666666666666686" y="726" width="252" height="68"/>
+                                <color key="backgroundColor" name="BrandOrange"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="252" id="IpI-6y-y5N"/>
+                                    <constraint firstAttribute="height" constant="68" id="etW-Ex-N6r"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ОБНОВИТЬ ПРИЛОЖЕНИЕ">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="16" name="Rubik-SemiBold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bistrodengi-logo" translatesAutoresizingMaskIntoConstraints="NO" id="E31-vQ-HjH">
+                                <rect key="frame" x="131.66666666666666" y="63" width="129.99999999999997" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="SXu-9Q-ONh"/>
+                                    <constraint firstAttribute="height" constant="24" id="w2h-f2-A1j"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z6w-zo-BtS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JEl-sS-AzB" firstAttribute="centerX" secondItem="JQC-uJ-oON" secondAttribute="centerX" id="0ed-52-cf1"/>
+                            <constraint firstItem="rwe-fS-a0J" firstAttribute="centerX" secondItem="JQC-uJ-oON" secondAttribute="centerX" constant="-10" id="2ej-fe-a3v"/>
+                            <constraint firstAttribute="bottom" secondItem="zHP-Dc-8HB" secondAttribute="bottom" constant="58" id="63Y-Fm-Mff"/>
+                            <constraint firstItem="JEl-sS-AzB" firstAttribute="top" secondItem="JQC-uJ-oON" secondAttribute="top" constant="258" id="6fY-71-53h"/>
+                            <constraint firstItem="E31-vQ-HjH" firstAttribute="top" secondItem="JQC-uJ-oON" secondAttribute="top" constant="63" id="Emo-9W-doo"/>
+                            <constraint firstItem="zHP-Dc-8HB" firstAttribute="centerX" secondItem="JQC-uJ-oON" secondAttribute="centerX" id="Enj-tc-HEg"/>
+                            <constraint firstItem="8XZ-Wg-TVp" firstAttribute="trailing" secondItem="Z6w-zo-BtS" secondAttribute="trailing" id="Ewp-r6-WVr"/>
+                            <constraint firstItem="FLq-XW-fDp" firstAttribute="top" secondItem="JEl-sS-AzB" secondAttribute="bottom" constant="44" id="FIi-lV-c93"/>
+                            <constraint firstItem="81g-Bh-szL" firstAttribute="leading" secondItem="Z6w-zo-BtS" secondAttribute="leading" constant="46" id="OYe-Tg-Szh"/>
+                            <constraint firstItem="Z6w-zo-BtS" firstAttribute="trailing" secondItem="81g-Bh-szL" secondAttribute="trailing" constant="46" id="RSb-5G-3pA"/>
+                            <constraint firstItem="Z6w-zo-BtS" firstAttribute="trailing" secondItem="FLq-XW-fDp" secondAttribute="trailing" constant="46" id="U9j-Xi-yCd"/>
+                            <constraint firstItem="8XZ-Wg-TVp" firstAttribute="top" secondItem="JQC-uJ-oON" secondAttribute="top" id="WzA-pD-x6m"/>
+                            <constraint firstItem="E31-vQ-HjH" firstAttribute="centerX" secondItem="JQC-uJ-oON" secondAttribute="centerX" id="bD3-Wd-qio"/>
+                            <constraint firstAttribute="bottom" secondItem="8XZ-Wg-TVp" secondAttribute="bottom" id="e3W-hc-P1M"/>
+                            <constraint firstItem="rwe-fS-a0J" firstAttribute="top" secondItem="JQC-uJ-oON" secondAttribute="top" constant="303" id="eoI-Vf-QkP"/>
+                            <constraint firstItem="81g-Bh-szL" firstAttribute="top" secondItem="FLq-XW-fDp" secondAttribute="bottom" constant="20" id="gf0-By-kIE"/>
+                            <constraint firstItem="FLq-XW-fDp" firstAttribute="leading" secondItem="Z6w-zo-BtS" secondAttribute="leading" constant="46" id="lzz-39-VNh"/>
+                            <constraint firstItem="8XZ-Wg-TVp" firstAttribute="leading" secondItem="Z6w-zo-BtS" secondAttribute="leading" id="nAf-mj-QJT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goUpdate" destination="zHP-Dc-8HB" id="QV8-l5-bnr"/>
+                        <outlet property="refreshImage" destination="rwe-fS-a0J" id="r0h-hh-IUx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTU-x6-K4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1703" y="-2"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="375" height="812"/>
+        <image name="bistrodengi-logo" width="260" height="48"/>
         <image name="call-me-icon" width="20" height="20"/>
         <image name="ok-timer" width="145.33332824707031" height="145.66667175292969"/>
         <image name="play" width="51" height="51"/>
+        <image name="refresh" width="86.333335876464844" height="86"/>
+        <image name="square-timer" width="150" height="149"/>
+        <namedColor name="BrandOrange">
+            <color red="0.96470588235294119" green="0.52941176470588236" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Gray30">
             <color red="0.79607843137254897" green="0.82352941176470584" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

@@ -52,7 +52,8 @@ class LoanCell: UICollectionViewCell {
     
     //MARK: Actions
     @IBAction func sumSliderDragged(_ sender: Any) {
-        userSelectSum.text = ("\(Int(sumSlider.value))  ₽")
+        let formattedSum = NumberFormatter.formattedString(from: Double(round(sumSlider.value / 1000)) * 1000) ?? "\(Int(round(sumSlider.value / 1000) * 1000))  ₽"
+        userSelectSum.text = "\(formattedSum) ₽"
     }
     
     @IBAction func daysSliderDragged(_ sender: Any) {
@@ -74,6 +75,8 @@ class LoanCell: UICollectionViewCell {
     
     //MARK: functions
     
+   
+    
     func configure(with model: NewLoanProductModel) {
         if let greenLineText = model.greenLineText {
             greenLine.isHidden = false
@@ -84,16 +87,16 @@ class LoanCell: UICollectionViewCell {
         
         //MustHave
         loanName.text = model.loanName
-        maxLoanSum.text = "\(model.maxLoanSum) ₽"
+        maxLoanSum.text = NumberFormatter.formattedString(from: Double(model.maxLoanSum)) ?? "\(model.maxLoanSum)" + " ₽"
         percentTop.text = "\(model.percentTop)% в день"
         daysTop.text = "\(model.daysTopMenu) д."
         
         //SumOfLoanSelect
-        maxSum.text = "\(model.maxLoanSum) ₽"
+        maxSum.text = NumberFormatter.formattedString(from: Double(model.maxLoanSum)) ?? "\(model.maxLoanSum)" + " ₽"
         sumSlider.minimumValue = 1000
         sumSlider.maximumValue = Float(model.maxLoanSum)
         sumSlider.value = Float(model.maxLoanSum)
-        userSelectSum.text = "\(model.maxLoanSum) ₽"
+        userSelectSum.text = NumberFormatter.formattedString(from: Double(model.maxLoanSum)) ?? "\(model.maxLoanSum)" + " ₽"
         
         if let selectedDays = model.selectedDays {
             termSelect.isHidden = false
@@ -151,5 +154,14 @@ class LoanCell: UICollectionViewCell {
         selectLoan.setTitleColor(UIColor.white, for: .normal)
         selectLoan.layer.cornerRadius = selectLoan.bounds.height / 2
         selectLoan.clipsToBounds = true
+    }
+}
+
+extension NumberFormatter {
+    static func formattedString(from number: Double) -> String? {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.groupingSeparator = " "
+        return numberFormatter.string(from: NSNumber(value: number))
     }
 }
