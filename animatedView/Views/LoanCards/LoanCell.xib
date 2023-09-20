@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoanCell" id="gTV-IL-0wX" customClass="LoanCell" customModule="animatedView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="659"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="659"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tf0-xe-0tg">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALa-Zu-mXX">
+                                <rect key="frame" x="0.0" y="9.9999999999999982" width="350" height="16.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Хит продаж! ">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Green"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ALa-Zu-mXX" secondAttribute="trailing" id="9VL-Al-3ZR"/>
+                            <constraint firstAttribute="height" constant="100" id="ATD-vH-Hyf"/>
+                            <constraint firstItem="ALa-Zu-mXX" firstAttribute="leading" secondItem="tf0-xe-0tg" secondAttribute="leading" id="TZM-RF-jgi"/>
+                            <constraint firstItem="ALa-Zu-mXX" firstAttribute="top" secondItem="tf0-xe-0tg" secondAttribute="top" constant="10" id="hNi-zp-NlC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds true" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iIz-Hh-eka">
+                        <rect key="frame" x="0.0" y="35" width="350" height="656"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHz-D6-EAd">
+                                <rect key="frame" x="16" y="32" width="318" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="LqO-jf-8gg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV6-Hi-tLp">
+                                <rect key="frame" x="16.000000000000007" y="49" width="124.66666666666669" height="16.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Первый займ 0%   ">
+                                        <attributes>
+                                            <color key="NSColor" name="Gray70"/>
+                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ak-Mk-WU3">
+                                <rect key="frame" x="16" y="81.333333333333329" width="219" height="46.666666666666671"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="До 15 000 ₽">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="40" name="Rubik-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vGY-zL-9jY" userLabel="Terms Stack">
+                                <rect key="frame" x="16.000000000000014" y="144" width="224.33333333333337" height="16"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="percent-icon" translatesAutoresizingMaskIntoConstraints="NO" id="4ZD-FK-N5m">
+                                        <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="W1M-5c-vlz"/>
+                                            <constraint firstAttribute="height" constant="16" id="Y7O-qI-wDL"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0% в день" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyE-Pm-lxq">
+                                        <rect key="frame" x="24" y="0.0" width="110" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="Dcd-Am-yeI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                        <color key="textColor" name="Gray70"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar-icon" translatesAutoresizingMaskIntoConstraints="NO" id="UDa-1e-thp">
+                                        <rect key="frame" x="142" y="0.0" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="WaG-St-niC"/>
+                                            <constraint firstAttribute="height" constant="16" id="YCp-Hu-VEl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 дней" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZ0-NX-1Na">
+                                        <rect key="frame" x="166" y="0.0" width="58.333333333333343" height="16"/>
+                                        <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                        <color key="textColor" name="Gray70"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-o6-FEJ" userLabel="Line">
+                                <rect key="frame" x="16" y="176" width="318" height="1"/>
+                                <color key="backgroundColor" name="Gray20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7ca-Vn-CD4"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="1dd-41-7I2" userLabel="Sum">
+                                <rect key="frame" x="16" y="193" width="318" height="80.333333333333314"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="139" translatesAutoresizingMaskIntoConstraints="NO" id="DxW-5Z-ac2">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="16.333333333333332"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUv-LE-JLM">
+                                                <rect key="frame" x="0.0" y="0.0" width="124.33333333333333" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Сумма займа">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6p-7W-3jy">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="54.666666666666686" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="15 000 ₽">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5000" minValue="1000" maxValue="15000" translatesAutoresizingMaskIntoConstraints="NO" id="7Ca-VD-xAj">
+                                        <rect key="frame" x="-2" y="22.333333333333343" width="322" height="31"/>
+                                        <color key="tintColor" name="BrandOrange"/>
+                                        <connections>
+                                            <action selector="sumSliderDragged:" destination="gTV-IL-0wX" eventType="valueChanged" id="60f-a2-4fP"/>
+                                        </connections>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="241" translatesAutoresizingMaskIntoConstraints="NO" id="Hfd-G6-KFB">
+                                        <rect key="frame" x="0.0" y="58.333333333333314" width="318" height="14"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whn-mY-ZoG">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="14"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="1000">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="12" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iik-lD-yW0">
+                                                <rect key="frame" x="281" y="0.0" width="37" height="14"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="15 000">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="12" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08v-cI-NLF" userLabel="Spacer">
+                                        <rect key="frame" x="39" y="78.333333333333314" width="240" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="WgT-fW-oeC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="DxW-5Z-ac2" secondAttribute="trailing" id="DyX-KA-yqS"/>
+                                    <constraint firstItem="7Ca-VD-xAj" firstAttribute="leading" secondItem="1dd-41-7I2" secondAttribute="leading" id="KJT-X5-nfw"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Ca-VD-xAj" secondAttribute="trailing" id="X9Y-Pl-5eb"/>
+                                    <constraint firstItem="DxW-5Z-ac2" firstAttribute="leading" secondItem="1dd-41-7I2" secondAttribute="leading" id="XmR-Nb-ZXv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hfd-G6-KFB" secondAttribute="trailing" id="f7P-qA-e2o"/>
+                                    <constraint firstItem="Hfd-G6-KFB" firstAttribute="leading" secondItem="1dd-41-7I2" secondAttribute="leading" id="tvU-C1-Bsz"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9i5-zP-dFh" userLabel="Days">
+                                <rect key="frame" x="16" y="289.33333333333331" width="318" height="62.333333333333314"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="134" translatesAutoresizingMaskIntoConstraints="NO" id="caE-rS-NVh">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="16.333333333333332"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVY-4p-iy4">
+                                                <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Срок займа">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAl-VM-u1X">
+                                                <rect key="frame" x="211.66666666666666" y="0.0" width="106.33333333333334" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="63 Д.">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LUN-I3-hXp">
+                                        <rect key="frame" x="-2" y="16.333333333333371" width="322" height="31"/>
+                                        <color key="tintColor" name="BrandOrange"/>
+                                        <connections>
+                                            <action selector="daysSliderDragged:" destination="gTV-IL-0wX" eventType="valueChanged" id="VeU-b5-uN0"/>
+                                        </connections>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="290" translatesAutoresizingMaskIntoConstraints="NO" id="8PM-ac-QsB">
+                                        <rect key="frame" x="0.0" y="46.333333333333371" width="318" height="14"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPD-h4-vWE">
+                                                <rect key="frame" x="0.0" y="0.0" width="14.333333333333334" height="14"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="1">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="12" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZP-Nd-eao">
+                                                <rect key="frame" x="304.33333333333331" y="0.0" width="13.666666666666686" height="14"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="63">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="12" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOK-Sb-7Qm" userLabel="Spacer">
+                                        <rect key="frame" x="39" y="60.333333333333371" width="240" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="SCD-e1-7Fi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8PM-ac-QsB" firstAttribute="leading" secondItem="9i5-zP-dFh" secondAttribute="leading" id="1zq-zK-hK3"/>
+                                    <constraint firstAttribute="trailing" secondItem="caE-rS-NVh" secondAttribute="trailing" id="4QC-fd-j9E"/>
+                                    <constraint firstItem="8PM-ac-QsB" firstAttribute="leading" secondItem="9i5-zP-dFh" secondAttribute="leading" id="7jf-F7-jz7"/>
+                                    <constraint firstItem="LUN-I3-hXp" firstAttribute="leading" secondItem="9i5-zP-dFh" secondAttribute="leading" id="Txc-sY-eFG"/>
+                                    <constraint firstItem="caE-rS-NVh" firstAttribute="leading" secondItem="9i5-zP-dFh" secondAttribute="leading" id="UjJ-1f-ECe"/>
+                                    <constraint firstAttribute="trailing" secondItem="8PM-ac-QsB" secondAttribute="trailing" id="Vb2-B1-TcU"/>
+                                    <constraint firstAttribute="trailing" secondItem="LUN-I3-hXp" secondAttribute="trailing" id="kdd-UI-Cku"/>
+                                    <constraint firstAttribute="trailing" secondItem="8PM-ac-QsB" secondAttribute="trailing" id="lje-vj-04c"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xvm-Hu-Fhu" userLabel="Percent">
+                                <rect key="frame" x="16" y="367.66666666666669" width="318" height="54.666666666666686"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-BN-Bix">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="16.333333333333332"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lw1-V9-lNt">
+                                                <rect key="frame" x="0.0" y="0.0" width="117.33333333333333" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Сумма процентов">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96P-ok-W3g">
+                                                <rect key="frame" x="197.33333333333334" y="0.0" width="120.66666666666666" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="0.00 ₽">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="116" translatesAutoresizingMaskIntoConstraints="NO" id="ddb-Tl-Wjm">
+                                        <rect key="frame" x="0.0" y="38.333333333333314" width="318" height="16.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqQ-Rh-HUn">
+                                                <rect key="frame" x="0.0" y="0.0" width="99.666666666666671" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Дата возврата:">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqF-26-NFX">
+                                                <rect key="frame" x="215.66666666666666" y="0.0" width="102.33333333333334" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="30.08.2023">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ddb-Tl-Wjm" firstAttribute="leading" secondItem="Xvm-Hu-Fhu" secondAttribute="leading" id="Cdc-UI-so5"/>
+                                    <constraint firstAttribute="trailing" secondItem="o4g-BN-Bix" secondAttribute="trailing" id="FT6-ka-tJh"/>
+                                    <constraint firstItem="o4g-BN-Bix" firstAttribute="leading" secondItem="Xvm-Hu-Fhu" secondAttribute="leading" id="jnN-Ea-ymR"/>
+                                    <constraint firstAttribute="trailing" secondItem="ddb-Tl-Wjm" secondAttribute="trailing" id="wN7-gi-43A"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1dR-30-DMg" userLabel="Schedule">
+                                <rect key="frame" x="16" y="438.33333333333331" width="318" height="83.666666666666686"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="csA-V0-rEH">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqc-aI-EzV">
+                                                <rect key="frame" x="0.0" y="0.0" width="298" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="График платежей">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="18" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i-icon" translatesAutoresizingMaskIntoConstraints="NO" id="dEe-kp-hSP">
+                                                <rect key="frame" x="298" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="BYL-WP-pug"/>
+                                                    <constraint firstAttribute="height" constant="20" id="gRm-Lg-Yl3"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Uy7-nw-oZ9">
+                                        <rect key="frame" x="0.0" y="36" width="318" height="16.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2t0-yH-N8q">
+                                                <rect key="frame" x="0.0" y="0.0" width="107.33333333333333" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Сумма платежа:">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SP-fB-Uuw">
+                                                <rect key="frame" x="115.33333333333336" y="0.0" width="202.66666666666663" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="4 100 ₽">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="W3m-1i-ONO">
+                                        <rect key="frame" x="0.0" y="67.333333333333314" width="318" height="16.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psE-db-olN">
+                                                <rect key="frame" x="0.0" y="0.0" width="294.33333333333331" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Количество платежей:">
+                                                        <attributes>
+                                                            <color key="NSColor" name="Gray70"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FbH-s0-Dmu">
+                                                <rect key="frame" x="302.33333333333331" y="0.0" width="15.666666666666686" height="16.333333333333332"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="10">
+                                                        <attributes>
+                                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <font key="NSFont" size="14" name="Rubik-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Uy7-nw-oZ9" secondAttribute="trailing" id="7eK-vC-58c"/>
+                                    <constraint firstItem="W3m-1i-ONO" firstAttribute="leading" secondItem="1dR-30-DMg" secondAttribute="leading" id="dHI-pb-I5h"/>
+                                    <constraint firstAttribute="trailing" secondItem="W3m-1i-ONO" secondAttribute="trailing" id="fLP-xn-1jB"/>
+                                    <constraint firstItem="Uy7-nw-oZ9" firstAttribute="leading" secondItem="1dR-30-DMg" secondAttribute="leading" id="gyC-mH-res"/>
+                                    <constraint firstItem="csA-V0-rEH" firstAttribute="leading" secondItem="1dR-30-DMg" secondAttribute="leading" id="sUe-qE-Nfm"/>
+                                    <constraint firstAttribute="trailing" secondItem="csA-V0-rEH" secondAttribute="trailing" id="uDa-rl-uC1"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIi-9G-JPo">
+                                <rect key="frame" x="16" y="538" width="318" height="68"/>
+                                <color key="backgroundColor" name="BrandOrange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="4h3-9B-4VV"/>
+                                    <constraint firstAttribute="width" constant="318" id="spQ-cd-AdQ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="ВЫБРАТЬ ЗАЙМ">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Rubik-SemiBold"/>
+                                                <font key="NSOriginalFont" size="16" name="Rubik-SemiBold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qIi-9G-JPo" secondAttribute="trailing" constant="16" id="32x-7I-pMg"/>
+                            <constraint firstAttribute="trailing" secondItem="9i5-zP-dFh" secondAttribute="trailing" constant="16" id="37G-3D-5fP"/>
+                            <constraint firstItem="9i5-zP-dFh" firstAttribute="leading" secondItem="iIz-Hh-eka" secondAttribute="leading" constant="16" id="4lK-d2-eoY"/>
+                            <constraint firstItem="1dR-30-DMg" firstAttribute="leading" secondItem="iIz-Hh-eka" secondAttribute="leading" constant="16" id="Kkv-mQ-Xov"/>
+                            <constraint firstAttribute="trailing" secondItem="1dR-30-DMg" secondAttribute="trailing" constant="16" id="SBv-om-ayS"/>
+                            <constraint firstItem="1dd-41-7I2" firstAttribute="leading" secondItem="iIz-Hh-eka" secondAttribute="leading" constant="16" id="U6s-Kz-fLF"/>
+                            <constraint firstItem="qIi-9G-JPo" firstAttribute="leading" secondItem="iIz-Hh-eka" secondAttribute="leading" constant="16" id="hn0-Wc-Kuu"/>
+                            <constraint firstAttribute="trailing" secondItem="1dd-41-7I2" secondAttribute="trailing" constant="16" id="iAB-LJ-Lsz"/>
+                            <constraint firstItem="Xvm-Hu-Fhu" firstAttribute="leading" secondItem="iIz-Hh-eka" secondAttribute="leading" constant="16" id="wwg-0F-U6N"/>
+                            <constraint firstAttribute="trailing" secondItem="Xvm-Hu-Fhu" secondAttribute="trailing" constant="16" id="wzZ-v5-4gr"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="8" left="16" bottom="16" right="16"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds true" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iIz-Hh-eka" secondAttribute="trailing" id="4Br-Ww-57B"/>
+                <constraint firstItem="iIz-Hh-eka" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="35" id="9k5-0B-CSJ"/>
+                <constraint firstItem="tf0-xe-0tg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Alh-k4-K7T"/>
+                <constraint firstItem="tf0-xe-0tg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PTl-TL-I7i"/>
+                <constraint firstAttribute="trailing" secondItem="tf0-xe-0tg" secondAttribute="trailing" id="ain-Ug-D96"/>
+                <constraint firstItem="iIz-Hh-eka" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fNf-0g-hEH"/>
+            </constraints>
+            <connections>
+                <outlet property="cardStack" destination="iIz-Hh-eka" id="iod-F9-aq7"/>
+                <outlet property="dateofReturn" destination="HqF-26-NFX" id="ugN-1B-GrZ"/>
+                <outlet property="daysSlider" destination="LUN-I3-hXp" id="ih7-dl-1A9"/>
+                <outlet property="daysTop" destination="AZ0-NX-1Na" id="9Jw-kH-TZh"/>
+                <outlet property="greenLine" destination="tf0-xe-0tg" id="JNh-ML-heF"/>
+                <outlet property="greenLineText" destination="ALa-Zu-mXX" id="XEx-9l-kbp"/>
+                <outlet property="loanName" destination="cV6-Hi-tLp" id="ETt-go-4qv"/>
+                <outlet property="maxDays" destination="aZP-Nd-eao" id="nWj-XO-IaK"/>
+                <outlet property="maxLoanSum" destination="6ak-Mk-WU3" id="nNk-Xq-GES"/>
+                <outlet property="maxSum" destination="iik-lD-yW0" id="l9E-T4-AnY"/>
+                <outlet property="minDays" destination="bPD-h4-vWE" id="qBQ-Ej-Jww"/>
+                <outlet property="minSum" destination="Whn-mY-ZoG" id="TdC-oW-THl"/>
+                <outlet property="paymentsCount" destination="FbH-s0-Dmu" id="0Au-Ek-g2j"/>
+                <outlet property="percentInfo" destination="Xvm-Hu-Fhu" id="cdC-bd-ChK"/>
+                <outlet property="percentSize" destination="96P-ok-W3g" id="Ajf-di-dMv"/>
+                <outlet property="percentTop" destination="JyE-Pm-lxq" id="9Lo-UE-UKy"/>
+                <outlet property="scheduleInfo" destination="1dR-30-DMg" id="pet-pd-Qhk"/>
+                <outlet property="selectLoan" destination="qIi-9G-JPo" id="uRZ-6E-CfG"/>
+                <outlet property="selectedDays" destination="sAl-VM-u1X" id="LUt-eG-Qg5"/>
+                <outlet property="selectedSum" destination="DxW-5Z-ac2" id="HLL-re-bq9"/>
+                <outlet property="sumOfPayment" destination="0SP-fB-Uuw" id="vhg-0y-ud2"/>
+                <outlet property="sumSelect" destination="1dd-41-7I2" id="GNN-RK-goq"/>
+                <outlet property="sumSlider" destination="7Ca-VD-xAj" id="tPT-SN-odz"/>
+                <outlet property="termSelect" destination="9i5-zP-dFh" id="dRL-Wa-toW"/>
+                <outlet property="userSelectSum" destination="H6p-7W-3jy" id="StX-KN-aUa"/>
+            </connections>
+            <point key="canvasLocation" x="16.793893129770993" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="calendar-icon" width="16" height="16.333333969116211"/>
+        <image name="i-icon" width="20" height="20"/>
+        <image name="percent-icon" width="16" height="16.333333969116211"/>
+        <namedColor name="BrandOrange">
+            <color red="0.96470588235294119" green="0.52941176470588236" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray20">
+            <color red="0.89411764705882357" green="0.92941176470588238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray70">
+            <color red="0.43500000238418579" green="0.44299998879432678" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Green">
+            <color red="0.22745098039215686" green="0.81568627450980391" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
