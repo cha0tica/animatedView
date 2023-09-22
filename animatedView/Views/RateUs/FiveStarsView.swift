@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 import SnapKit
+import PanModal
 
-class FiveStarsView : UIViewController {
+class FiveStarsView : UIViewController, PanModalPresentable {
+    var panScrollable: UIScrollView?
+    
     
     //MARK: Actions
     @objc func endThis() {
@@ -28,10 +31,14 @@ class FiveStarsView : UIViewController {
         //TODO
     }
     
+    //MARK: Vars
+    let goAppStore = UIButton()
+    
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
+        gradientButtom()
     }
     
     //MARK: Functions
@@ -45,21 +52,9 @@ class FiveStarsView : UIViewController {
         popUp.snp.makeConstraints { maker in
             maker.left.equalToSuperview()
             maker.right.equalToSuperview()
-            maker.top.equalToSuperview()
+            maker.bottom.equalToSuperview()
             
             maker.height.equalTo(460)
-        }
-        
-        let dragger = UIView()
-        dragger.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
-        dragger.layer.cornerRadius = 2
-        view.addSubview(dragger)
-        dragger.snp.makeConstraints { maker in
-            maker.centerX.equalToSuperview()
-            maker.bottom.equalTo(popUp.snp.top).inset(-8)
-            
-            maker.height.equalTo(4)
-            maker.width.equalTo(44)
         }
         
         let image = UIImage(named: "ok-timer")
@@ -97,7 +92,6 @@ class FiveStarsView : UIViewController {
             maker.left.equalTo(popUp).inset(30)
         }
         
-        let goAppStore = UIButton()
         goAppStore.addTarget(self, action: #selector(letsGoAppstore), for: .touchUpInside)
         goAppStore.setTitle("ОЦЕНИТЬ В APPSTORE", for: .normal)
         goAppStore.titleLabel?.font = UIFont(name: "Rubik-Medium", size: 14)
@@ -106,16 +100,6 @@ class FiveStarsView : UIViewController {
         goAppStore.clipsToBounds = true
         goAppStore.backgroundColor = UIColor(named: "BrandOrange")
         view.addSubview(goAppStore)
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [
-            UIColor(red: 1, green: 0.61, blue: 0.29, alpha: 1).cgColor,
-            UIColor(red: 0.96, green: 0.47, blue: 0.08, alpha: 1).cgColor
-        ]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = goAppStore.bounds
-        
-        goAppStore.layer.insertSublayer(gradientLayer, at: 0)
         
         goAppStore.snp.makeConstraints { maker in
             maker.top.equalTo(mainText.snp.bottom).offset(32)
@@ -142,6 +126,18 @@ class FiveStarsView : UIViewController {
             maker.height.equalTo(34)
             maker.width.equalTo(300)
         }
+    }
+    
+    func gradientButtom() {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [
+            UIColor(red: 1, green: 0.61, blue: 0.29, alpha: 1).cgColor,
+            UIColor(red: 0.96, green: 0.47, blue: 0.08, alpha: 1).cgColor
+        ]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = goAppStore.bounds
+        
+        goAppStore.layer.insertSublayer(gradientLayer, at: 0)
     }
 }
     

@@ -7,8 +7,11 @@
 
 import UIKit
 import Lottie
+import PanModal
 
-class OkLoanAnimation: UIViewController {
+class OkLoanAnimation: UIViewController, PanModalPresentable {
+    var panScrollable: UIScrollView?
+    
     
     //MARK: Outlets
     @IBOutlet weak var headerText: UILabel!
@@ -18,9 +21,7 @@ class OkLoanAnimation: UIViewController {
     //MARK: Actions
     @IBAction func rateUsButton(_ sender: Any) {
         let rateUsPopUp = RateUsView()
-            let sheet = rateUsPopUp.sheetPresentationController
-            sheet?.detents = [.medium()]
-            present(rateUsPopUp, animated: true)
+        self.presentPanModal(rateUsPopUp)
     }
     
     //MARK: Lifecycle
