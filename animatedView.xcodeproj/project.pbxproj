@@ -33,6 +33,7 @@
 		D17582112AABB91C00B4ACB7 /* Rubik-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14BC5022AABA6F000A29B3E /* Rubik-SemiBoldItalic.ttf */; };
 		D18209F62AAA59EA006B837B /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18209F42AAA59EA006B837B /* LoanCell.swift */; };
 		D18209F72AAA59EA006B837B /* LoanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18209F52AAA59EA006B837B /* LoanCell.xib */; };
+		D1AF30C22ABE53630025E002 /* RatingPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF30C12ABE53630025E002 /* RatingPopUp.swift */; };
 		D1BAD58A2AA7DBEF0019CADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAD5892AA7DBEF0019CADD /* AppDelegate.swift */; };
 		D1BAD58C2AA7DBEF0019CADD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAD58B2AA7DBEF0019CADD /* SceneDelegate.swift */; };
 		D1BAD58E2AA7DBEF0019CADD /* OkLoanAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAD58D2AA7DBEF0019CADD /* OkLoanAnimation.swift */; };
@@ -70,6 +71,7 @@
 		D171B2BB2AA8F91E003C80FC /* LoanProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanProductVC.swift; sourceTree = "<group>"; };
 		D18209F42AAA59EA006B837B /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
 		D18209F52AAA59EA006B837B /* LoanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoanCell.xib; sourceTree = "<group>"; };
+		D1AF30C12ABE53630025E002 /* RatingPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingPopUp.swift; sourceTree = "<group>"; };
 		D1BAD5862AA7DBEF0019CADD /* animatedView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animatedView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1BAD5892AA7DBEF0019CADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1BAD58B2AA7DBEF0019CADD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				D145EE1F2AB643B5006E3AA0 /* BadRateView.swift */,
 				D13C12582AB8B826001BCCDB /* ThankYouForReviewView.swift */,
 				D13C125A2AB8C318001BCCDB /* FiveStarsView.swift */,
+				D1AF30C12ABE53630025E002 /* RatingPopUp.swift */,
 			);
 			path = RateUs;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				D171B2A12AA7E21F003C80FC /* Colors.swift in Sources */,
 				D18209F62AAA59EA006B837B /* LoanCell.swift in Sources */,
 				D1BAD58A2AA7DBEF0019CADD /* AppDelegate.swift in Sources */,
+				D1AF30C22ABE53630025E002 /* RatingPopUp.swift in Sources */,
 				D1BAD58C2AA7DBEF0019CADD /* SceneDelegate.swift in Sources */,
 				D1EFC40E2AAE615700F0B1ED /* GoUpdate.swift in Sources */,
 				D16897E62AACAE4F00ED801C /* LoanProductFlowLayout.swift in Sources */,
