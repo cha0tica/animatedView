@@ -1,5 +1,5 @@
 //
-//  GoodRateView.swift
+//  BadRateView.swift
 //  animatedView
 //
 //  Created by Agata on 16.09.2023.

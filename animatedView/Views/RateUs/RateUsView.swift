@@ -60,6 +60,7 @@ class RateUsView: UIViewController, PanModalPresentable {
     var selectedRate : Int = 0
     private let feedbackGenerator = UISelectionFeedbackGenerator()
     private let starsContainer = UIStackView()
+
     
     
     //MARK: Lifecycle
@@ -159,16 +160,18 @@ class RateUsView: UIViewController, PanModalPresentable {
     }
 }
 
-extension UIImageView {
-    func addPulsationAnimation() {
-        print("Adding pulsation animation")
-        let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
-        scaleAnimation.duration = 0.2
-        scaleAnimation.fromValue = 0.8
-        scaleAnimation.toValue = 1
-        scaleAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-        scaleAnimation.repeatCount = .greatestFiniteMagnitude
-        scaleAnimation.repeatCount = 1
-        self.layer.add(scaleAnimation, forKey: nil)
-    }
-}
+/*
+ extension UIImageView {
+ func addPulsationAnimation() {
+ print("Adding pulsation animation")
+ let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
+ scaleAnimation.duration = 0.2
+ scaleAnimation.fromValue = 0.8
+ scaleAnimation.toValue = 1
+ scaleAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+ scaleAnimation.repeatCount = .greatestFiniteMagnitude
+ scaleAnimation.repeatCount = 1
+ self.layer.add(scaleAnimation, forKey: nil)
+ }
+ }
+ */

@@ -100,7 +100,7 @@ class FiveStarsView : UIViewController, PanModalPresentable {
         goAppStore.clipsToBounds = true
         goAppStore.backgroundColor = UIColor(named: "BrandOrange")
         view.addSubview(goAppStore)
-        
+
         goAppStore.snp.makeConstraints { maker in
             maker.top.equalTo(mainText.snp.bottom).offset(32)
             maker.centerX.equalToSuperview()
