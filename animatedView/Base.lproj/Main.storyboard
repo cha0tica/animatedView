@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Smu-fz-y0q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -102,7 +103,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="rateUsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FaL-GK-aLM"/>
+                                    <action selector="rateUsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BHC-lZ-JDG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -226,7 +227,243 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBW-hx-0ah" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="-2"/>
+            <point key="canvasLocation" x="885" y="675"/>
+        </scene>
+        <!--Like Dislike View-->
+        <scene sceneID="EwQ-eb-rQ8">
+            <objects>
+                <viewController storyboardIdentifier="LikeDislikeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MJr-W7-YfB" customClass="LikeDislikeView" customModule="animatedView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wwq-OH-5BH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="pts-GP-5cw">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ys6-6m-Y13">
+                                <rect key="frame" x="344" y="25" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="a6z-QH-nDU"/>
+                                    <constraint firstAttribute="height" constant="24" id="cSc-BC-jlg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="close-icon"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeThisTapped:" destination="MJr-W7-YfB" eventType="touchUpInside" id="b7T-Jf-r8z"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="iBo-4e-7EN">
+                                <rect key="frame" x="25" y="109" width="343" height="712"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTw-yH-VqX">
+                                        <rect key="frame" x="6.6666666666666572" y="0.0" width="330" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="DY8-V9-zhM"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Займ успешно оформлен!">
+                                                <attributes>
+                                                    <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="24" name="Rubik-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ik5-6E-9Oq">
+                                        <rect key="frame" x="6.6666666666666572" y="51" width="330" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="Xva-qB-DPj"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Через несколько минут займ придет вам на карту
+Спасибо что доверяете нам!</string>
+                                                <attributes>
+                                                    <color key="NSColor" name="Gray70"/>
+                                                    <font key="NSFont" size="16" name="Rubik-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="-2"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="uOi-MT-kj1">
+                                        <rect key="frame" x="28.666666666666657" y="146" width="286" height="54"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzJ-vs-mEZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="127" height="54"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="005-bi-rLD"/>
+                                                    <constraint firstAttribute="width" constant="127" id="4b3-tP-a69"/>
+                                                </constraints>
+                                                <color key="tintColor" name="Gray70"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="hand.thumbsdown.fill" catalog="system" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="didTapDislike:" destination="MJr-W7-YfB" eventType="touchUpInside" id="3of-Wk-9Of"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EB-Up-zjw">
+                                                <rect key="frame" x="159" y="0.0" width="127" height="54"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="VsW-4q-Do1"/>
+                                                    <constraint firstAttribute="width" constant="127" id="YXV-JH-vyT"/>
+                                                </constraints>
+                                                <color key="tintColor" name="Gray70"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup.fill" catalog="system" cornerStyle="capsule"/>
+                                                <connections>
+                                                    <action selector="didTapLike:" destination="MJr-W7-YfB" eventType="touchUpInside" id="You-j2-gXZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVd-6T-F5H">
+                                        <rect key="frame" x="6.6666666666666572" y="223" width="330" height="125"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="Og7-47-cht"/>
+                                            <constraint firstAttribute="height" constant="125" id="eje-mf-5Gc"/>
+                                        </constraints>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZDB-pm-Wc8">
+                                        <rect key="frame" x="6.6666666666666572" y="371" width="330" height="68"/>
+                                        <color key="backgroundColor" name="BrandOrange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="DDF-fg-9Zu"/>
+                                            <constraint firstAttribute="height" constant="68" id="JcC-Jk-wxY"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="ОТПРАВИТЬ ОТЗЫВ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="16" name="Rubik-SemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendReviewTapped:" destination="MJr-W7-YfB" eventType="touchUpInside" id="CNX-Hl-olu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yl2-hK-cHT">
+                                        <rect key="frame" x="6.6666666666666572" y="462" width="330" height="68"/>
+                                        <color key="backgroundColor" name="BrandOrange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="Iik-zQ-X2P"/>
+                                            <constraint firstAttribute="height" constant="68" id="UZh-eq-y1R"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="ОЦЕНИТЬ В APPSTORE">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="16" name="Rubik-SemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="rateAppstoreTapped:" destination="MJr-W7-YfB" eventType="touchUpInside" id="ESs-aA-TXe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQN-yN-N6z">
+                                        <rect key="frame" x="6.6666666666666572" y="553" width="330" height="68"/>
+                                        <color key="backgroundColor" name="BrandOrange"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="sdQ-k6-bIp"/>
+                                            <constraint firstAttribute="width" constant="330" id="uN8-EZ-8Zn"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="ЗАВЕРШИТЬ">
+                                                    <attributes>
+                                                        <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <font key="NSFont" size="16" name="Rubik-SemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="overButtonTapped:" destination="MJr-W7-YfB" eventType="touchUpInside" id="Vnb-Xv-Edr"/>
+                                            <action selector="rateAppstoreTapped:" destination="MJr-W7-YfB" eventType="touchUpInside" id="KQt-Lf-7Cg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KCd-Gq-B9I">
+                                        <rect key="frame" x="6.6666666666666572" y="644" width="330" height="68"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="330" id="6pW-pE-8dk"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="FZI-Yl-XRE"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="НЕТ, СПАСИБО">
+                                                    <attributes>
+                                                        <color key="NSColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="16" name="Rubik-SemiBold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="noThanksTapped:" destination="MJr-W7-YfB" eventType="touchUpInside" id="Axq-Dz-EjU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XvH-w4-Gaz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iBo-4e-7EN" firstAttribute="top" secondItem="XvH-w4-Gaz" secondAttribute="top" constant="50" id="3G9-Xe-sh7"/>
+                            <constraint firstItem="pts-GP-5cw" firstAttribute="top" secondItem="Wwq-OH-5BH" secondAttribute="top" id="I6V-XG-HDn"/>
+                            <constraint firstItem="XvH-w4-Gaz" firstAttribute="trailing" secondItem="iBo-4e-7EN" secondAttribute="trailing" constant="25" id="Qqa-TI-uAy"/>
+                            <constraint firstItem="iBo-4e-7EN" firstAttribute="leading" secondItem="XvH-w4-Gaz" secondAttribute="leading" constant="25" id="TsA-c4-TXa"/>
+                            <constraint firstItem="ys6-6m-Y13" firstAttribute="top" secondItem="Wwq-OH-5BH" secondAttribute="top" constant="25" id="ceS-VJ-hVi"/>
+                            <constraint firstAttribute="trailing" secondItem="pts-GP-5cw" secondAttribute="trailing" id="dhO-VJ-vfu"/>
+                            <constraint firstItem="pts-GP-5cw" firstAttribute="leading" secondItem="XvH-w4-Gaz" secondAttribute="leading" id="oHY-Iv-vdf"/>
+                            <constraint firstAttribute="trailing" secondItem="ys6-6m-Y13" secondAttribute="trailing" constant="25" id="udT-Tl-wgS"/>
+                            <constraint firstItem="pts-GP-5cw" firstAttribute="bottom" secondItem="Wwq-OH-5BH" secondAttribute="bottom" id="v32-lh-DxE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dislikeButton" destination="mzJ-vs-mEZ" id="IjO-b9-dsF"/>
+                        <outlet property="likeButton" destination="9EB-Up-zjw" id="9lG-zR-alA"/>
+                        <outlet property="likeStack" destination="uOi-MT-kj1" id="F2r-30-haW"/>
+                        <outlet property="mainText" destination="kTw-yH-VqX" id="jbk-fY-1uM"/>
+                        <outlet property="noThanksButton" destination="KCd-Gq-B9I" id="6wW-j9-lFV"/>
+                        <outlet property="overButton" destination="EQN-yN-N6z" id="wsB-4A-RSy"/>
+                        <outlet property="rateAppstoreButton" destination="yl2-hK-cHT" id="icR-VC-YXz"/>
+                        <outlet property="secondaryText" destination="Ik5-6E-9Oq" id="y09-1l-M1h"/>
+                        <outlet property="sendReviewButton" destination="ZDB-pm-Wc8" id="1Yr-Cy-PnN"/>
+                        <outlet property="stackView" destination="iBo-4e-7EN" id="TiD-Rv-N3t"/>
+                        <outlet property="textReview" destination="FVd-6T-F5H" id="ONi-na-RRd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8g7-um-UKY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="-2"/>
         </scene>
         <!--Go Update-->
         <scene sceneID="VHz-Dp-89i">
@@ -619,7 +856,6 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
-                                                <variation key="heightClass=regular-widthClass=compact"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwG-HC-fp0" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
                                                 <rect key="frame" x="102" y="0.0" width="80" height="80"/>
@@ -734,7 +970,10 @@
         <image name="bistrodengi-logo" width="260" height="48"/>
         <image name="call-me-icon" width="20" height="20"/>
         <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="close-icon" width="24" height="24"/>
         <image name="faceid" catalog="system" width="128" height="115"/>
+        <image name="hand.thumbsdown.fill" catalog="system" width="128" height="121"/>
+        <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
         <image name="ok-timer" width="145.33332824707031" height="145.66667175292969"/>
         <image name="play" width="51" height="51"/>
         <image name="refresh" width="86.333335876464844" height="86"/>

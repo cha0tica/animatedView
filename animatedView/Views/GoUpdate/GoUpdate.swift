@@ -19,7 +19,7 @@ class GoUpdate : UIViewController {
         startRotationAnimation()
     }
     
-    func gradientButton() {
+    private func gradientButton() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [
             UIColor(red: 1, green: 0.61, blue: 0.29, alpha: 1).cgColor,

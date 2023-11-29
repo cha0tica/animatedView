@@ -20,8 +20,10 @@ class OkLoanAnimation: UIViewController, PanModalPresentable {
 
     //MARK: Actions
     @IBAction func rateUsButton(_ sender: Any) {
-        let rateUsPopUp = RatingPopUp()
-        self.presentPanModal(rateUsPopUp)
+        //let rateUsPopUp = RatingPopUp()
+        //self.presentPanModal(rateUsPopUp)
+        let popup = LikeDislikeView()
+            self.presentPanModal(popup)
     }
     
     //MARK: Lifecycle

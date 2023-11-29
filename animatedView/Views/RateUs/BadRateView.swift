@@ -27,7 +27,7 @@ class BadRateView : UIViewController, UITextViewDelegate, PanModalPresentable {
     }
     
     //MARK: Vars
-    let placeholder = "Что можно улучшить?"
+    private let placeholder = "Что можно улучшить?"
     
     let submitReview = UIButton()
     let popUp = UIView()
