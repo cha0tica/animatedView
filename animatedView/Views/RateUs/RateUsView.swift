@@ -7,9 +7,11 @@
 
 import UIKit
 import SnapKit
+import PanModal
 
-class RateUsView: UIViewController {
-    
+class RateUsView: UIViewController, PanModalPresentable {
+    var panScrollable: UIScrollView?
+        
     //MARK: Actions
     @objc func closeBottomSheet() {
         self.dismiss(animated: true, completion: nil)
@@ -37,16 +39,19 @@ class RateUsView: UIViewController {
         }
         
         if rate >= 1 && rate <= 4 {
-            let badRateViewController = BadRateView()
-                let sheet = badRateViewController.sheetPresentationController
-                sheet?.detents = [.medium()]
-                present(badRateViewController, animated: true)
-                        } else {
-                let fiveStarsViewController = FiveStarsView()
-                            let sheet = fiveStarsViewController.sheetPresentationController
-                            sheet?.detents = [.medium()]
-                            present(fiveStarsViewController, animated: true)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                let badRateViewController = BadRateView()
+                self.presentPanModal(badRateViewController)
             }
+                        } else {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                let fiveStarsViewController = FiveStarsView()
+                                self.presentPanModal(fiveStarsViewController)
+
+                            }
+                            
+                        }
+        
         
     }
     
@@ -55,6 +60,7 @@ class RateUsView: UIViewController {
     var selectedRate : Int = 0
     private let feedbackGenerator = UISelectionFeedbackGenerator()
     private let starsContainer = UIStackView()
+
     
     
     //MARK: Lifecycle
@@ -85,18 +91,6 @@ class RateUsView: UIViewController {
             maker.bottom.equalToSuperview()
             
             maker.height.equalTo(300)
-        }
-        
-        let dragger = UIView()
-        dragger.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
-        dragger.layer.cornerRadius = 2
-        view.addSubview(dragger)
-        dragger.snp.makeConstraints { maker in
-            maker.centerX.equalToSuperview()
-            maker.bottom.equalTo(popUp.snp.top).inset(-8)
-            
-            maker.height.equalTo(4)
-            maker.width.equalTo(44)
         }
         
         let closeButton = UIButton()
@@ -166,16 +160,18 @@ class RateUsView: UIViewController {
     }
 }
 
-extension UIImageView {
-    func addPulsationAnimation() {
-        print("Adding pulsation animation")
-        let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
-        scaleAnimation.duration = 0.2
-        scaleAnimation.fromValue = 0.8
-        scaleAnimation.toValue = 1
-        scaleAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-        scaleAnimation.repeatCount = .greatestFiniteMagnitude
-        scaleAnimation.repeatCount = 1
-        self.layer.add(scaleAnimation, forKey: nil)
-    }
-}
+/*
+ extension UIImageView {
+ func addPulsationAnimation() {
+ print("Adding pulsation animation")
+ let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
+ scaleAnimation.duration = 0.2
+ scaleAnimation.fromValue = 0.8
+ scaleAnimation.toValue = 1
+ scaleAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+ scaleAnimation.repeatCount = .greatestFiniteMagnitude
+ scaleAnimation.repeatCount = 1
+ self.layer.add(scaleAnimation, forKey: nil)
+ }
+ }
+ */

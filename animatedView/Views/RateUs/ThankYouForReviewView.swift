@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 import SnapKit
+import PanModal
 
-class ThankYouForReviewView : UIViewController {
+class ThankYouForReviewView : UIViewController, PanModalPresentable {
+    var panScrollable: UIScrollView?
+    
     
     //MARK: Actions
     @objc func endThis() {
@@ -43,18 +46,6 @@ class ThankYouForReviewView : UIViewController {
             maker.top.equalToSuperview()
             
             maker.height.equalTo(460)
-        }
-        
-        let dragger = UIView()
-        dragger.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
-        dragger.layer.cornerRadius = 2
-        view.addSubview(dragger)
-        dragger.snp.makeConstraints { maker in
-            maker.centerX.equalToSuperview()
-            maker.bottom.equalTo(popUp.snp.top).inset(-8)
-            
-            maker.height.equalTo(4)
-            maker.width.equalTo(44)
         }
         
         let image = UIImage(named: "ok-timer")

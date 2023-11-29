@@ -1,5 +1,5 @@
 //
-//  GoodRateView.swift
+//  BadRateView.swift
 //  animatedView
 //
 //  Created by Agata on 16.09.2023.
@@ -7,8 +7,11 @@
 
 import UIKit
 import SnapKit
+import PanModal
 
-class BadRateView : UIViewController, UITextViewDelegate {
+class BadRateView : UIViewController, UITextViewDelegate, PanModalPresentable {
+    var panScrollable: UIScrollView?
+    
         
     //MARK: Actions
     @objc func closeBottomSheet() {
@@ -23,47 +26,43 @@ class BadRateView : UIViewController, UITextViewDelegate {
         
     }
     
+    //MARK: Vars
     let placeholder = "Что можно улучшить?"
+    
     let submitReview = UIButton()
+    let popUp = UIView()
+
     
     //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
+        gradientButtom()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+
     }
     
     //MARK: Functions
     func initialize() {
         view.backgroundColor = UIColor.clear
         
-        let popUp = UIView()
         popUp.backgroundColor = UIColor.white
         popUp.layer.cornerRadius = 20
         view.addSubview(popUp)
         popUp.snp.makeConstraints { maker in
             maker.left.equalToSuperview()
             maker.right.equalToSuperview()
-            maker.top.equalToSuperview()
+            maker.bottom.equalToSuperview()
             
             maker.height.equalTo(460)
-        }
-        
-        let dragger = UIView()
-        dragger.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1).cgColor
-        dragger.layer.cornerRadius = 2
-        view.addSubview(dragger)
-        dragger.snp.makeConstraints { maker in
-            maker.centerX.equalToSuperview()
-            maker.bottom.equalTo(popUp.snp.top).inset(-8)
-            
-            maker.height.equalTo(4)
-            maker.width.equalTo(44)
         }
         
         let closeButton = UIButton()
         closeButton.setImage(UIImage(named: "close-icon"), for: .normal)
         closeButton.addTarget(self, action: #selector(closeBottomSheet), for: .touchUpInside)
-        view.addSubview(closeButton)
+        popUp.addSubview(closeButton)
         closeButton.snp.makeConstraints { maker in
             maker.top.equalTo(popUp).inset(24)
             maker.right.equalTo(popUp).inset(20)
@@ -77,7 +76,7 @@ class BadRateView : UIViewController, UITextViewDelegate {
         headerText.font = UIFont(name: "Rubik-Regular", size: 20)
         headerText.textAlignment = .center
         headerText.text = "Спасибо за вашу оценку"
-        view.addSubview(headerText)
+        popUp.addSubview(headerText)
         headerText.snp.makeConstraints { maker in
             maker.centerX.equalToSuperview()
             maker.top.equalTo(popUp).inset(48)
@@ -89,7 +88,7 @@ class BadRateView : UIViewController, UITextViewDelegate {
         mainText.textAlignment = .center
         mainText.numberOfLines = 0
         mainText.text = "Расскажите, что можно улучшить в приложении?"
-        view.addSubview(mainText)
+        popUp.addSubview(mainText)
         mainText.snp.makeConstraints { maker in
             maker.top.equalTo(headerText.snp.bottom).offset(8)
             maker.right.equalTo(popUp).inset(30)
@@ -107,7 +106,7 @@ class BadRateView : UIViewController, UITextViewDelegate {
         reviewText.layer.cornerRadius = 16
         reviewText.layer.borderWidth = 1
         reviewText.layer.borderColor = UIColor(red: 0.894, green: 0.928, blue: 0.958, alpha: 1).cgColor
-        view.addSubview(reviewText)
+        popUp.addSubview(reviewText)
         reviewText.snp.makeConstraints { maker in
             maker.top.equalTo(mainText.snp.bottom).offset(32)
             maker.centerX.equalToSuperview()
@@ -126,17 +125,7 @@ class BadRateView : UIViewController, UITextViewDelegate {
         
         submitReview.isEnabled = false
         submitReview.alpha = 0.5
-        view.addSubview(submitReview)
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [
-            UIColor(red: 1, green: 0.61, blue: 0.29, alpha: 1).cgColor,
-            UIColor(red: 0.96, green: 0.47, blue: 0.08, alpha: 1).cgColor
-        ]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = submitReview.bounds
-        
-        submitReview.layer.insertSublayer(gradientLayer, at: 0)
+        popUp.addSubview(submitReview)
         
         submitReview.snp.makeConstraints { maker in
             maker.top.equalTo(reviewText.snp.bottom).offset(32)
@@ -168,4 +157,42 @@ class BadRateView : UIViewController, UITextViewDelegate {
         }
     }
     
+    func gradientButtom() {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [
+            UIColor(red: 1, green: 0.61, blue: 0.29, alpha: 1).cgColor,
+            UIColor(red: 0.96, green: 0.47, blue: 0.08, alpha: 1).cgColor
+        ]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = submitReview.bounds
+        
+        submitReview.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    @objc func keyboardWillShow(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect,
+              let duration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else {
+            return
+        }
+
+        let keyboardHeight = keyboardFrame.height
+
+        UIView.animate(withDuration: duration) {
+            self.view.frame.origin.y = -keyboardHeight + 50
+        }
+    }
+
+    @objc func keyboardWillHide(_ notification: Notification) {
+        guard let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else {
+            return
+        }
+
+        UIView.animate(withDuration: duration) {
+            self.view.frame.origin.y = 0
+        }
+    }
+
+
+
 }

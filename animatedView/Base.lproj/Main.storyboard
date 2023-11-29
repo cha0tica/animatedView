@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Smu-fz-y0q">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -13,13 +13,13 @@
         <!--Ok Loan Animation-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OkLoanAnimation" customModule="animatedView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Ok" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="OkLoanAnimation" customModule="animatedView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="PDP-Ee-B4V">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUj-Dm-i0i">
                                 <rect key="frame" x="46" y="451" width="301" height="28"/>
@@ -58,7 +58,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eic-v5-jvB">
-                                <rect key="frame" x="353" y="79" width="20" height="20"/>
+                                <rect key="frame" x="353" y="20" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="D9l-wH-jF2"/>
                                     <constraint firstAttribute="width" constant="20" id="aLn-6i-fjq"/>
@@ -69,14 +69,14 @@
                                 </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="8zw-tR-ouj">
-                                <rect key="frame" x="171" y="73.666666666666671" width="51" height="51"/>
+                                <rect key="frame" x="171" y="14.666666666666664" width="51" height="50.999999999999993"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="Qmd-HZ-muf"/>
                                     <constraint firstAttribute="width" constant="51" id="xDh-XU-1Gc"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AcX-lM-0az">
-                                <rect key="frame" x="70.666666666666686" y="718" width="252" height="68"/>
+                                <rect key="frame" x="70.666666666666686" y="742" width="252" height="68"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="Iyj-nn-aur"/>
@@ -132,6 +132,7 @@
                             <constraint firstItem="H2a-nS-J9z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="258" id="rBU-tD-4KD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TDE-A9-Nmu"/>
                     <connections>
                         <outlet property="headerText" destination="mUj-Dm-i0i" id="1DG-Yy-zvm"/>
                         <outlet property="okTimer" destination="H2a-nS-J9z" id="672-1S-VUu"/>
@@ -337,13 +338,403 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTU-x6-K4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="-2"/>
+            <point key="canvasLocation" x="47" y="675"/>
+        </scene>
+        <!--First Screen View Controller-->
+        <scene sceneID="jjz-Jg-83O">
+            <objects>
+                <viewController id="Smu-fz-y0q" customClass="FirstScreenViewController" customModule="animatedView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LUy-ae-gXi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BRg-hW-Prz">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toQ-gB-W0h">
+                                <rect key="frame" x="133" y="144.66666666666666" width="127.33333333333331" height="18.666666666666657"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Введите пин-код">
+                                        <attributes>
+                                            <color key="NSColor" name="Gray70"/>
+                                            <font key="NSFont" size="16" name="Rubik-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08X-Mh-23I">
+                                <rect key="frame" x="353" y="79" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="V01-xp-GmY"/>
+                                    <constraint firstAttribute="width" constant="20" id="y3T-Jy-evj"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="call-me-icon">
+                                    <color key="titleColor" name="Gray70"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="iqI-kV-GUI">
+                                <rect key="frame" x="171" y="73.666666666666671" width="51" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="Dw4-zI-WSH"/>
+                                    <constraint firstAttribute="height" constant="51" id="XuO-8D-jcj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CnI-ap-3g5" userLabel="Dots stack">
+                                <rect key="frame" x="106.66666666666669" y="203.33333333333334" width="180" height="25"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cHf-MM-EB8">
+                                        <rect key="frame" x="0.0" y="0.99999999999999822" width="20" height="18.666666666666664"/>
+                                        <color key="tintColor" name="Gray70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Zw4-Sk-Qgd"/>
+                                            <constraint firstAttribute="width" constant="20" id="qML-5P-S1m"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YFP-Eu-Vuy">
+                                        <rect key="frame" x="39.999999999999986" y="0.99999999999999822" width="20" height="18.666666666666664"/>
+                                        <color key="tintColor" name="Gray70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="BhQ-5u-8aK"/>
+                                            <constraint firstAttribute="height" constant="20" id="x8c-4i-uyH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wRI-mb-VXl">
+                                        <rect key="frame" x="79.999999999999986" y="0.99999999999999822" width="20" height="18.666666666666664"/>
+                                        <color key="tintColor" name="Gray70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="9cn-tK-vUt"/>
+                                            <constraint firstAttribute="height" constant="20" id="SXs-f9-Icl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-yH-q7M">
+                                        <rect key="frame" x="120" y="0.99999999999999822" width="20" height="18.666666666666664"/>
+                                        <color key="tintColor" name="Gray70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="C4D-26-khB"/>
+                                            <constraint firstAttribute="width" constant="20" id="VtY-Mf-kAY"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ks7-zC-eHF">
+                                        <rect key="frame" x="160" y="0.99999999999999822" width="20" height="18.666666666666664"/>
+                                        <color key="tintColor" name="Gray70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="5kP-nD-jhY"/>
+                                            <constraint firstAttribute="height" constant="20" id="Cgk-fa-pxP"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="doN-8O-H3S"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="pFx-ZL-MWo">
+                                <rect key="frame" x="54.666666666666657" y="258.33333333333331" width="284" height="388.99999999999994"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="o3u-Dg-BWA" userLabel="1-2-3">
+                                        <rect key="frame" x="0.0" y="0.0" width="284" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUJ-jC-eTR" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="CEV-26-Jxt"/>
+                                                    <constraint firstAttribute="width" constant="80" id="tng-Vu-5J5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SC9-ec-A2c" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="102" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="LAu-Nt-hGF"/>
+                                                    <constraint firstAttribute="height" constant="80" id="gWR-lf-cnm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1G-FX-Ly9" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="204.00000000000003" y="0.0" width="79.999999999999972" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="NX3-jI-ceN"/>
+                                                    <constraint firstAttribute="height" constant="80" id="dXl-j3-hH5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="1bx-Gz-thj" userLabel="4-5-6">
+                                        <rect key="frame" x="0.0" y="103" width="284" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsx-sX-UNu" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="1RN-Ms-t8f"/>
+                                                    <constraint firstAttribute="width" constant="80" id="3K2-Lg-Lbb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I89-ZA-lKx" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="102" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Z7E-gm-lfd"/>
+                                                    <constraint firstAttribute="height" constant="80" id="pwl-UN-1i1"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmr-Bg-88g" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="204.00000000000003" y="0.0" width="79.999999999999972" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="fsK-X3-3jf"/>
+                                                    <constraint firstAttribute="height" constant="80" id="l3e-2t-gtP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="N2v-Bg-ZIw" userLabel="7-8-9">
+                                        <rect key="frame" x="0.0" y="206" width="284" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJK-pD-rYa" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="8aC-kh-6lt"/>
+                                                    <constraint firstAttribute="height" constant="80" id="ZAC-Ws-6WA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aci-1k-Vwi" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="102" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="ddO-wM-Xm1"/>
+                                                    <constraint firstAttribute="width" constant="80" id="rZ5-zW-bcM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3U-vG-EG0" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="204.00000000000003" y="0.0" width="79.999999999999972" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="54S-et-dNd"/>
+                                                    <constraint firstAttribute="width" constant="80" id="WUO-z2-DJg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="sWq-r9-N3i" userLabel="7-8-9">
+                                        <rect key="frame" x="0.0" y="309.00000000000006" width="284" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kgU-QZ-dyh" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="ElY-Gv-ciQ"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Hgr-wf-FMJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Забыли?">
+                                                            <attributes>
+                                                                <color key="NSColor" name="Gray70"/>
+                                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=compact"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwG-HC-fp0" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="102" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Mzi-8V-c1G"/>
+                                                    <constraint firstAttribute="height" constant="80" id="gdw-bP-nNF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="36"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ege-Ru-d4j" customClass="RoundButton" customModule="animatedView" customModuleProvider="target">
+                                                <rect key="frame" x="204.00000000000003" y="0.0" width="79.999999999999972" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="H9Q-kN-27u"/>
+                                                    <constraint firstAttribute="height" constant="80" id="mni-fn-xX7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                                <color key="tintColor" name="Gray70"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="faceid" catalog="system">
+                                                    <color key="titleColor" name="Gray70"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="35"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="faceIdButtonTapped:" destination="Smu-fz-y0q" eventType="touchUpInside" id="5E5-ad-38L"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="66H-Ga-wyG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BRg-hW-Prz" secondAttribute="trailing" id="446-gQ-Oaj"/>
+                            <constraint firstItem="iqI-kV-GUI" firstAttribute="centerX" secondItem="LUy-ae-gXi" secondAttribute="centerX" id="5N4-ho-sOW"/>
+                            <constraint firstItem="08X-Mh-23I" firstAttribute="top" secondItem="66H-Ga-wyG" secondAttribute="top" constant="20" id="B62-d2-8Kk"/>
+                            <constraint firstItem="iqI-kV-GUI" firstAttribute="centerY" secondItem="08X-Mh-23I" secondAttribute="bottom" id="CSi-S9-EoL"/>
+                            <constraint firstAttribute="bottom" secondItem="BRg-hW-Prz" secondAttribute="bottom" id="DBE-TT-lio"/>
+                            <constraint firstItem="toQ-gB-W0h" firstAttribute="centerX" secondItem="LUy-ae-gXi" secondAttribute="centerX" id="MRA-eQ-TD9"/>
+                            <constraint firstItem="66H-Ga-wyG" firstAttribute="trailing" secondItem="08X-Mh-23I" secondAttribute="trailing" constant="20" id="Ok3-2Y-ci2"/>
+                            <constraint firstItem="CnI-ap-3g5" firstAttribute="top" secondItem="toQ-gB-W0h" secondAttribute="bottom" constant="40" id="Uaz-Ge-uPN"/>
+                            <constraint firstItem="BRg-hW-Prz" firstAttribute="top" secondItem="LUy-ae-gXi" secondAttribute="top" id="bsG-n3-UJV"/>
+                            <constraint firstItem="pFx-ZL-MWo" firstAttribute="top" secondItem="CnI-ap-3g5" secondAttribute="bottom" constant="30" id="ekB-lK-EK5"/>
+                            <constraint firstItem="toQ-gB-W0h" firstAttribute="top" secondItem="iqI-kV-GUI" secondAttribute="bottom" constant="20" id="hUR-zt-qvJ"/>
+                            <constraint firstItem="BRg-hW-Prz" firstAttribute="leading" secondItem="LUy-ae-gXi" secondAttribute="leading" id="m41-Lx-DwR"/>
+                            <constraint firstItem="pFx-ZL-MWo" firstAttribute="centerX" secondItem="LUy-ae-gXi" secondAttribute="centerX" id="x52-Io-yZL"/>
+                            <constraint firstItem="CnI-ap-3g5" firstAttribute="centerX" secondItem="LUy-ae-gXi" secondAttribute="centerX" id="xtv-Xq-OaR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="ShowApp" id="VVP-vf-3TV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BZH-sI-aBH" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-917" y="-2"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="A3U-vG-EG0">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+        <designable name="Bsx-sX-UNu">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+        <designable name="I89-ZA-lKx">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+        <designable name="SC9-ec-A2c">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+        <designable name="SJK-pD-rYa">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+        <designable name="ZUJ-jC-eTR">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+        <designable name="ZwG-HC-fp0">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+        <designable name="aci-1k-Vwi">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+        <designable name="ege-Ru-d4j">
+            <size key="intrinsicContentSize" width="42.333333333333336" height="38.333333333333336"/>
+        </designable>
+        <designable name="kgU-QZ-dyh">
+            <size key="intrinsicContentSize" width="66" height="31"/>
+        </designable>
+        <designable name="kmr-Bg-88g">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+        <designable name="z1G-FX-Ly9">
+            <size key="intrinsicContentSize" width="30" height="55"/>
+        </designable>
+    </designables>
     <resources>
         <image name="background" width="375" height="812"/>
         <image name="bistrodengi-logo" width="260" height="48"/>
         <image name="call-me-icon" width="20" height="20"/>
+        <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="faceid" catalog="system" width="128" height="115"/>
         <image name="ok-timer" width="145.33332824707031" height="145.66667175292969"/>
         <image name="play" width="51" height="51"/>
         <image name="refresh" width="86.333335876464844" height="86"/>
